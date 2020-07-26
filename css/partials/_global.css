@@ -53,3 +53,8 @@
   content:'';
   z-index: -1;
 }
+
+p.para {
+  color: var(--my-black);
+  font: normal 500 16px/25px "Karla";
+}
