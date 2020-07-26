@@ -10,10 +10,10 @@ $(document).ready(function() {
     });
     return false;
   })
-  // $('.experience .button-group #btn1').trigger('click');
+  $('.experience .button-group #btn1').trigger('click');
 
-  // $('.experience .grid .test-popup-link').magnificPopup({
-  //     type: 'image',
-  //     gallery: { enabled: true }
-  // });
+  $('.experience .grid .popup-link').magnificPopup({
+      type: 'image',
+      gallery: { enabled: true }
+  });
 });
