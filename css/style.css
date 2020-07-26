@@ -9,7 +9,6 @@
 }
 .header .menu .navbar .navbar-brand{
   padding: 0 .5rem 0 .5rem;
-  border: 2px solid var(--tertiary-color);
   border-radius:100%;
 }
 
@@ -78,6 +77,12 @@
 .site-main .about .about-title h2 > span {
   display:block;
   font: normal bold 49px/60px "Rubik";
+  transition: all 0.8s ease 0s;
+}
+
+.site-main .about .about-title h2 > span:hover {
+  color: var(--tertiary-color);
+  transition: all 0.5s ease 0s;
 }
 
 .site-main .about .about-title .paragraph > p {
@@ -90,6 +95,17 @@
   border-radius: 50%;
   width:50%;
   margin-left: 15%;
+  box-shadow: var(--box-shadow);
+}
+
+.site-main .about .about-image img{
+  transition: all .8s ease;
+  border:10px solid var(--tertiary-color);
+}
+
+.site-main .about .about-image img:hover{
+  transition: all 0.8s ease;
+  transform: scale(1.1);
 }
 /* End About */
 
@@ -97,11 +113,16 @@
 .site-main .experience {
   padding: 8rem 5rem;
   background: var(--secondary-color);
-  
 }
 
 .site-main .experience .title-text {
+  transition: all .8s ease;
   color: var(--my-white);
+}
+
+.site-main .experience .title-text:hover {
+  transition: all 0.5s ease;
+  color: var(--my-black);
 }
 
 .site-main .experience .button-group button {
@@ -120,20 +141,27 @@
   color: var(--my-white);
 }
 
-.site-main .text-secondary p {
-  color: var(--my-white);
+.site-main .experience .title-text h1:hover{
+  font: normal 700 25px/12px var(--rubik);
+  color: var(--my-black);
+}
+
+.site-main .experience .text-secondary p {
+  color: var(--my-black);
   opacity: 60%;
 }
 
-.site-main .img img{
+.site-main .experience .img img{
   transition: all .8s ease;
   border:6px solid transparent;
+  box-shadow: var(--box-shadow);
 }
 
-.site-main .img img:hover{
-  transition: all 0.2s ease 0s;
+.site-main .experience .img img:hover{
+  transition: all 0.5s ease 0s;
   transform: scale(.9);
-  border:6px solid var(--primary-color);
+  border:6px solid var(--p-bright);
+  filter:brightness(.7)
 }
 /* End Experience */
 
@@ -142,7 +170,6 @@
   padding: 8rem 5rem;
   background: var(--primary-color);
 }
-
 
 .site-main .projects .button-group button {
   background: transparent;
@@ -157,4 +184,29 @@
 .site-main .projects .grid .jobs >.title h4{
   font: normal 700 25px/12px var(--rubik);
 }
+
+.site-main .projects .title-text h1:hover{
+  font: normal 700 25px/12px var(--rubik);
+  color: var(--my-black);
+}
+
+.site-main .projects .text-secondary p {
+  color: var(--my-white);
+  opacity: 60%;
+}
+
+.site-main .projects .img img{
+  transition: all .8s ease;
+  border:6px solid transparent;
+  box-shadow: var(--box-shadow);
+}
+
+.site-main .projects .img img:hover{
+  transition: all 0.5s ease 0s;
+  transform: scale(.9);
+  border:6px solid var(--secondary-color);
+  filter:brightness(.7)
+}
 /* End Projects */
+
+315159

@@ -8,6 +8,7 @@ html,body {
 /* CSS vars */
 :root {
   --primary-color: #3eb489;
+  --p-bright: #58ffc2;
   --secondary-color: #3F6670;
   --tertiary-color: #E6AF2E;
   --my-black: #1F1E1E;

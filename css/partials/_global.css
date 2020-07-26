@@ -60,11 +60,6 @@
   z-index: -1;
 }
 
-/* TODO: Fix */
-.img {
-  border-radius: 50%;
-}
-
 
 p.para {
   color: var(--my-black);
