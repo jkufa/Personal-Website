@@ -1,0 +1,26 @@
+{
+  "name": "dependencies",
+  "version": "1.0.0",
+  "description": "Contains all node_modules being used",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkufa/Personal-Website.git"
+  },
+  "author": "Jack Kufa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkufa/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/jkufa/Personal-Website#readme"
+}
