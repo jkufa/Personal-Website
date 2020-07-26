@@ -7,7 +7,7 @@
 }
 
 .button {
-  padding: .8rem 2.2rem;
+  padding: 1rem 2.5rem;
   font: normal 500 16px/20px "Rubik";
   position: relative;
   border-radius:  10px;
@@ -76,4 +76,8 @@ button:hover,
 
 .title-h1{
   font:normal bold 39px/40px var(--rubik);
+}
+
+.section {
+  background-size:cover;
 }
