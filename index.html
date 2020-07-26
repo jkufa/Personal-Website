@@ -21,7 +21,7 @@
    <div class="menu">
      <!-- TODO: Make transparent when on top of page -->
      <nav class="navbar navbar-expand-lg navbar-dark">
-       <a class="navbar-brand" href="#">Jack Kufa</a>
+       <a class="navbar-brand" href="#">&#128526</a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,10 +36,10 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Resume</a>
@@ -56,7 +56,6 @@
 
 <!-- Start Main -->
 <main class="site-main">
-
   <!-- Start Banner -->
   <section class="site-banner">
     <div class="container">
@@ -65,7 +64,7 @@
         <div class="col-lg-6 col-md-12 site-title">
           <h1 class="title-text">What's Crackin'?</h1>
           <h3 class="title-text">I'm Jack Kufa, and I'm a maker.</h3>
-          <h4 class="title-text">PCBs, software development, graphics, and more.</h4>
+          <h4 class="subtitle-text">PCBs, software development, graphics, and more.</h4>
           <div clas="site-button">
             <div class="d-flex flex-row flex-wrap">
               <button type="button" class="btn button primary-button mr-4 text-uppercase">Contact</button>
@@ -107,6 +106,72 @@
     </div>
   </section>
   <!-- End About -->
+
+<!-- Start Expereience-->
+<section class="experience">
+  <div class="container">
+    <div class="exp-title pb-5">
+      <h1 class="title-text">Stuff I've Done</h1>
+      <div class="button-group">
+        <button type="button" class="active">All</button>
+        <button type="button" data-filter=".past">Past</button>
+        <button type="button" data-filter=".present">Present</button>
+        <button type="button" data-filter=".future">Future</button>
+      </div>
+      <div class="row grid">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
+          <div class="jobs">
+            <div class="img">
+              <img src="/images/p1.jpg" alt="job1">
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Underwater Robotics</h4>
+              <span class="text-secondary">Past</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
+          <div class="jobs">
+            <div class="img">
+              <img src="/images/p1.jpg" alt="job1">
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Embyr Technologies LLC</h4>
+              <span class="text-secondary">Past</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
+          <div class="jobs">
+            <div class="img">
+              <img src="/images/p1.jpg" alt="job1">
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Yaskawa America Inc.</h4>
+              <span class="text-secondary">Past</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item present">
+          <div class="jobs">
+            <div class="img">
+              <img src="/images/p1.jpg" alt="job1">
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">CinemaCraft LLC</h4>
+              <span class="text-secondary">Present</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Projects -->
+
+<!-- Start Projects -->
+<!-- End Projects -->
+
 </main>
 <!-- End Main -->
 
@@ -114,6 +179,10 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <!--Bootsrap JS-->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./js/main.js"></script>
+  <!-- Isotope js -->
+  <script src="./js/isotope.min.js"></script>
 </body>
 
 
