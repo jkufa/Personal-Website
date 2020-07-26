@@ -8,11 +8,15 @@ html,body {
 /* CSS vars */
 :root {
   --primary-color: #3eb489;
-  --primary-color2: #1a1919;
-  --my-white: #eff0eb;
+  --secondary-color: #3F6670;
+  --tertiary-color: #E6AF2E;
+  --my-black: #1F1E1E;
+  --my-white: #F0FAF9;
   --title-color: #141313;
   --gradient-dark: linear-gradient(45deg, rgba(62,180,137,1) 0%, rgba(43,95,102,1) 78%);
   --gradient-light: linear-gradient(45deg, rgba(62,180,137,1) 0%, rgba(179,227,233,1) 100%);
+  --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
   /* Fonts */
   --rubik: "Rubik";
