@@ -60,7 +60,6 @@
   z-index: -1;
 }
 
-
 p.para {
   color: var(--my-black);
   font: normal 500 16px/25px "Karla";
@@ -73,4 +72,8 @@ button:hover,
 .btn.active{
     outline: 0px !important;
     box-shadow: none !important;
+}
+
+.title-h1{
+  font:normal bold 39px/40px var(--rubik);
 }

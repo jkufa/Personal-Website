@@ -166,9 +166,20 @@
 /* End Experience */
 
 /* Start Projects */
+
+
 .site-main .projects {
   padding: 8rem 5rem;
   background: var(--primary-color);
+}
+
+.site-main .projects .title-text {
+  transition: all .8s ease;
+  color: var(--my-black);
+}
+.site-main .projects .title-text:hover {
+  transition: all 0.5s ease;
+  color: var(--my-white);
 }
 
 .site-main .projects .button-group button {
@@ -187,7 +198,7 @@
 
 .site-main .projects .title-text h1:hover{
   font: normal 700 25px/12px var(--rubik);
-  color: var(--my-black);
+  color: var(--my-white);
 }
 
 .site-main .projects .text-secondary p {
