@@ -8,7 +8,9 @@
   background-color: var(--my-black);
 }
 .header .menu .navbar .navbar-brand{
-  padding: 0 2rem 0 2rem;
+  padding: 0 .5rem 0 .5rem;
+  border: 2px solid var(--tertiary-color);
+  border-radius:100%;
 }
 
 .header .menu .navbar {
@@ -118,10 +120,21 @@
   color: var(--my-white);
 }
 
-.site-main .projects .title .text-secondary span {
+.site-main .text-secondary p {
   color: var(--my-white);
+  opacity: 60%;
 }
 
+.site-main .img img{
+  transition: all .8s ease;
+  border:6px solid transparent;
+}
+
+.site-main .img img:hover{
+  transition: all 0.2s ease 0s;
+  transform: scale(.9);
+  border:6px solid var(--primary-color);
+}
 /* End Experience */
 
 /* Start Projects */

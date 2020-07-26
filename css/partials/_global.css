@@ -41,10 +41,11 @@
   background-clip: padding-box;
   color: var(--my-white);
   box-shadow: var(--box-shadow);
+  border: 3px solid var(--my-black);
 }
 
 .button.secondary-button:hover {
-  border: 1px solid var(--my-black);
+  border: 3px solid var(--my-black);
   background: var(--tertiary-color);
   background-clip: padding-box;
   color:var(--my-black);
