@@ -40,6 +40,6 @@ $(document).ready(function() {
   $('#pagepiling').pagepiling({
     menu: null,
     direction: 'vertical',
-    anchors: ['home','about','exp','proj','contact'],    
+    anchors: ['home','about','experience','projects','contact'],    
   });
 });

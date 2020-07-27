@@ -24,63 +24,62 @@
 </head>
 <body>
  <!--Start Header-->
+ <header class="header">
+  <div class="menu">
+    <!-- TODO: Make transparent when on top of page -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">&#128526</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <!--Put buttons on right-->
+         <div class="mr-auto"></div> 
+         <ul class="navbar-nav">
+           <li data-menuanchor="home" class="nav-item active">
+             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li data-menuanchor="about" class="nav-item">
+             <a class="nav-link" href="#about">About</a>
+           </li>
+           <li data-menuanchor="experience" class="nav-item">
+             <a class="nav-link" href="#experience">Experience</a>
+           </li>
+           <li data-menuanchor="projects" class="nav-item">
+             <a class="nav-link" href="#projects">Projects</a>
+           </li>
+           <li data-menuanchor="contact" class="nav-item">
+             <a class="nav-link" href="#contact">Contact</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="./files/jack-kufa-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+           </li>
+           <!-- <li class="nav-item">
+             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+           </li> -->
+         </ul>
+       </div>
+     </nav>
+   </div>
+ </header>
+ <!--End Header -->
+ 
  <div id="pagepiling">
-     <header class="header">
-       <div class="menu">
-         <!-- TODO: Make transparent when on top of page -->
-         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-           <a class="navbar-brand" href="#">&#128526</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <!--Put buttons on right-->
-              <div class="mr-auto"></div> 
-              <ul class="navbar-nav">
-                <li data-menuanchor="home" class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li data-menuanchor="about" class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li data-menuanchor="exp" class="nav-item">
-                  <a class="nav-link" href="#">Experience</a>
-                </li>
-                <li data-menuanchor="proj" class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li data-menuanchor="contact" class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-    </div>
-      <!--End Header -->
-      
-    <!-- Start Main -->
-    <main class="site-main">
-      <!-- Start Banner -->
-    <div class="section">
-      <section class="site-banner">
-          <!-- Row w/ 2 columns, 6 col width & 12 medium-->
-          <div class="row">
-            <div class="col-lg-6 col-md-12 site-title">
-              <h1 class="title-text">What's Crackin'?</h1>
-              <h3 class="title-text">I'm Jack Kufa, and I'm a maker.</h3>
-              <h4 class="subtitle-text">PCBs, software development, graphics, and more.</h4>
-              <div clas="site-button">
-                <div class="d-flex flex-row flex-wrap">
-                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Contact</button>
-                  <button type="button" class="btn button secondary-button text-uppercase">Resume</button>
+   <!-- Start Main -->
+   <main class="site-main">
+     <!-- Start Banner -->
+     <div class="section">
+       <section class="site-banner">
+         <!-- Row w/ 2 columns, 6 col width & 12 medium-->
+         <div class="row">
+           <div class="col-lg-6 col-md-12 site-title">
+             <h1 class="title-text">What's Crackin'?</h1>
+             <h3 class="title-text">I'm Jack Kufa, and I'm a maker.</h3>
+             <h4 class="subtitle-text">PCBs, software development, graphics, and more.</h4>
+             <div clas="site-button">
+               <div class="d-flex flex-row flex-wrap">
+                 <button type="button" class="btn button primary-button mr-4 text-uppercase">Contact</button>
+                 <button type="button" class="btn button secondary-button text-uppercase">Resume</button>
                 </div>
               </div>
             </div>
@@ -88,10 +87,10 @@
               <img src="/images/retreiver.jpg" alt="banner-img" class="img-fluid">
             </div>
           </div>
-      </section>
-    </div>
+        </section>
+      </div>
       <!--End Banner -->
-
+      
       <!-- Start About -->
       <div class="section">
         <section class="about">
@@ -118,7 +117,7 @@
         </section>  
       </div>
       <!-- End About -->
-
+      
       <!-- Start Experience -->
       <div class="section pp-scrollable">
         <section class="experience">
@@ -130,55 +129,55 @@
                 <button type="button" data-filter=".past">Past</button>
                 <button type="button" data-filter=".present">Present</button>
                 <button type="button" data-filter=".future">Future</button>
-             </div>
-            <div class="row grid">
-              <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
-                <div class="jobs">
-                  <div class="img">
-                    <a class="popup-link" href="/images/p1.jpg">
-                      <img src="/images/p1.jpg" alt="job1">
-                    </a>
-                  </div>
-                  <div class="title py-4">
+              </div>
+              <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
+                  <div class="jobs">
+                    <div class="img">
+                      <a class="popup-link" href="/images/p1.jpg">
+                        <img src="/images/p1.jpg" alt="job1">
+                      </a>
+                    </div>
+                    <div class="title py-4">
                     <h4 class="text-uppercase">Underwater Robotics</h4>
                     <span class="text-secondary"><p>Past</p></span>
                   </div>
                 </div>
               </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
-              <div class="jobs">
-                <div class="img">
-                  <a class="popup-link" href="/images/p1.jpg">
-                    <img src="/images/p1.jpg" alt="job2">
-                  </a>
-                </div>
-                <div class="title py-4">
-                  <h4 class="text-uppercase">Embyr Technologies LLC</h4>
-                  <span class="text-secondary"><p>Past</p></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
-              <div class="jobs">
-                <div class="img">
-                  <a class="popup-link" href="/images/p1.jpg">
-                    <img src="/images/p1.jpg" alt="job3">
-                  </a>
-                </div>
-                <div class="title py-4">
-                  <h4 class="text-uppercase">Yaskawa America Inc.</h4>
-                  <span class="text-secondary"><p>Past</p></span>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
+                <div class="jobs">
+                  <div class="img">
+                    <a class="popup-link" href="/images/p1.jpg">
+                      <img src="/images/p1.jpg" alt="job2">
+                    </a>
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Embyr Technologies LLC</h4>
+                    <span class="text-secondary"><p>Past</p></span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item present">
-              <div class="jobs">
-                <div class="img">
-                  <a class="popup-link" href="/images/p1.jpg">
-                    <img src="/images/p1.jpg" alt="job4">
-                  </a>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
+                <div class="jobs">
+                  <div class="img">
+                    <a class="popup-link" href="/images/p1.jpg">
+                      <img src="/images/p1.jpg" alt="job3">
+                    </a>
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Yaskawa America Inc.</h4>
+                    <span class="text-secondary"><p>Past</p></span>
+                  </div>
                 </div>
-                <div class="title py-4">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item present">
+                <div class="jobs">
+                  <div class="img">
+                    <a class="popup-link" href="/images/p1.jpg">
+                      <img src="/images/p1.jpg" alt="job4">
+                    </a>
+                  </div>
+                  <div class="title py-4">
                     <h4 class="text-uppercase">CinemaCraft LLC</h4>
                     <span class="text-secondary"><p>Past</p></span>
                   </div>
@@ -189,54 +188,54 @@
         </div>
       </section>
     </div>
-      <!-- End Experience -->
-
-      <!-- Start Projects -->
-      <div class="section">
-          <section class="projects">
-            <div class="container">
-              <div class="exp-title pb-5">
-                <h1 class="title-text">Stuff I've Made</h1>
-                <div class="button-group">
-                  <button type="button" class="active">All</button>
-                  <button type="button" data-filter=".past">Past</button>
-                  <button type="button" data-filter=".present">Present</button>
-                  <button type="button" data-filter=".future">Future</button>
-                  <button type="button" data-filter=".hackathon">Hackathon</button>
-                  <button type="button" data-filter=".personal">Personal</button>
-                </div>
-                <div class="row grid">
-                  <div class="col-lg-4 col-md-6 col-sm-12 element-item past hackathon">
-                    <div class="jobs">
-                      <div class="img">
-                        <a class="popup-link" href="/images/p1.jpg">
-                          <img src="/images/p2.jpg" alt="proj1">
-                        </a>
-                      </div>
-                    <div class="title py-4">
-                      <h4 class="text-uppercase">Fitness Tracker</h4>
-                      <span class="text-secondary"><p>Past, Hackathon</p></span>
-                    </div>
+    <!-- End Experience -->
+    
+    <!-- Start Projects -->
+    <div class="section">
+      <section class="projects">
+        <div class="container">
+          <div class="exp-title pb-5">
+            <h1 class="title-text">Stuff I've Made</h1>
+            <div class="button-group">
+              <button type="button" class="active">All</button>
+              <button type="button" data-filter=".past">Past</button>
+              <button type="button" data-filter=".present">Present</button>
+              <button type="button" data-filter=".future">Future</button>
+              <button type="button" data-filter=".hackathon">Hackathon</button>
+              <button type="button" data-filter=".personal">Personal</button>
+            </div>
+            <div class="row grid">
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item past hackathon">
+                <div class="jobs">
+                  <div class="img">
+                    <a class="popup-link" href="/images/p1.jpg">
+                      <img src="/images/p2.jpg" alt="proj1">
+                    </a>
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Fitness Tracker</h4>
+                    <span class="text-secondary"><p>Past, Hackathon</p></span>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item present personal">
-                  <div class="jobs">
-                    <div class="img">
-                      <a class="popup-link" href="/images/p1.jpg">
-                        <img src="/images/p2.jpg" alt="proj2">
-                      </a>
-                    </div>
-                    <div class="title py-4">
-                      <h4 class="text-uppercase">Controller Modding</h4>
-                      <span class="text-secondary"><p>Present, Personal</p></span>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item present personal">
+                <div class="jobs">
+                  <div class="img">
+                    <a class="popup-link" href="/images/p1.jpg">
+                      <img src="/images/p2.jpg" alt="proj2">
+                    </a>
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Controller Modding</h4>
+                    <span class="text-secondary"><p>Present, Personal</p></span>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item past hackathon">
-                  <div class="jobs">
-                    <div class="img">
-                      <a class="popup-link" href="/images/p1.jpg">
-                        <img src="/images/p2.jpg" alt="proj3">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item past hackathon">
+                <div class="jobs">
+                  <div class="img">
+                    <a class="popup-link" href="/images/p1.jpg">
+                      <img src="/images/p2.jpg" alt="proj3">
                       </a>
                     </div>
                     <div class="title py-4">
@@ -264,102 +263,103 @@
         </section>
       </div>
       <!-- End Projects -->
-
+      
       <!-- Start Contact -->
       <div class="section">
         <section class="contact">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center contact-title">
-                  <h1 class="title-text">Contact</h1>
+                <h1 class="title-text">Contact</h1>
               </div>
-          </div>
-          <div class="container">
+            </div>
+            <div class="container">
               <div class="row">
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                      <div class="socials">
-                          <div class="socials-img text-center py-4">
-                              <img src="./images/icons/email.svg" alt="Email" width="105">
-                          </div>
-                          <div class="card-body text-center">
-                              <h5 class="card-title font-rubik">Email</h5>
-                          </div>
-                      </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="socials">
+                    <div class="socials-img text-center py-4">
+                      <img src="./images/icons/email.svg" alt="Email" width="105">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title font-rubik">Email</h5>
+                    </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                      <div class="socials">
-                          <div class="socials-img text-center py-4">
-                              <img src="./images/icons/linkedin.svg" alt="Linkedin" width="80" height="80">
-                          </div>
-                          <div class="card-body text-center">
-                              <h5 class="card-title font-rubik">LinkedIn</h5>
-                          </div>
-                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="socials">
+                    <div class="socials-img text-center py-4">
+                      <img src="./images/icons/linkedin.svg" alt="Linkedin" width="80" height="80">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title font-rubik">LinkedIn</h5>
+                    </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                      <div class="socials">
-                          <div class="socials-img text-center py-4">
-                              <img src="./images/icons/twitter.svg" alt="Twitter" width="80" height="80">
-                          </div>
-                          <div class="card-body text-center">
-                              <h5 class="card-title font-rubik">Twitter</h5>
-
-                          </div>
-                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="socials">
+                    <div class="socials-img text-center py-4">
+                      <img src="./images/icons/twitter.svg" alt="Twitter" width="80" height="80">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title font-rubik">Twitter</h5>
+                      
+                    </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                      <div class="socials">
-                          <div class="socials-img text-center py-4">
-                              <img src="./images/icons/github.svg" alt="GitHub" width="80" >
-                          </div>
-                          <div class="card-body text-center">
-                              <h5 class="card-title font-rubik">GitHub</h5>
-
-                          </div>
-                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="socials">
+                    <div class="socials-img text-center py-4">
+                      <img src="./images/icons/github.svg" alt="GitHub" width="80" >
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title font-rubik">GitHub</h5>
+                      
+                    </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="font-rubik">Thanks for stopping by! 🙂</h2>
-            </div>
-        </div>
-        <!-- End Contact -->
-        
-        <!-- Start Footer -->
-        <footer class="footer-area">
-          <div class="container">
-            <div id="bottom">
-              <div class="footer text-center align-bottom">
-                Jack Kufa 2020 😛
-              </div>  
+              <h2 class="font-rubik">Thanks for stopping by! 🙂</h2>
             </div>
           </div>
-        </footer>
-        <!-- End Footer -->
+          <!-- End Contact -->
+          
+          <!-- Start Footer -->
+          <footer class="footer-area">
+            <div class="container">
+              <div id="bottom">
+                <div class="footer text-center align-bottom">
+                  Jack Kufa 2020 😛
+                </div>  
+              </div>
+            </div>
+          </footer>
+          <!-- End Footer -->
         </section>
       </div>
-
-
-<!--Jquery JS-->
-<script src="./node_modules/jquery/dist/jquery.min.js"></script>
-<!--Bootsrap JS-->
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Isotope js -->
-<script src="./js/isotope.min.js"></script>
-<!-- Magnific -->
-<script src="./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-<!-- Owl Carousel -->
-  <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <!-- Page Piling -->
-  <script src="./js/pagePiling/jquery.pagepiling.min.js"></script>
-  <script type="text/javascript" src="jquery.pagepiling.js"></script>
-  <!-- Custom JS -->
-  <script src="./js/main.js"></script>
-</body>
-
-
-
-</html>
+</div>
+      
+      
+      <!--Jquery JS-->
+      <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+      <!--Bootsrap JS-->
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- Isotope js -->
+      <script src="./js/isotope.min.js"></script>
+      <!-- Magnific -->
+      <script src="./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+      <!-- Owl Carousel -->
+      <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+      <!-- Page Piling -->
+      <script src="./js/pagePiling/jquery.pagepiling.min.js"></script>
+      <script type="text/javascript" src="jquery.pagepiling.js"></script>
+      <!-- Custom JS -->
+      <script src="./js/main.js"></script>
+    </body>
+    
+    
+    
+    </html>
