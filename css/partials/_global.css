@@ -1,9 +1,12 @@
 .title-text {
-  font: normal bold 50px/72px "Rubik" 
+  font: normal bold 50px/72px "Rubik" ;
+  width:100%;
+  position: relative;
 }
 
 .subtitle-text {
   font: normal 50px/72px "Karla";
+  width:100%;
 }
 
 .button {
@@ -18,7 +21,7 @@
   background-clip: padding-box;
   border: 3px solid var(--secondary-color);
   color: var(--my-black);
-  margin-left: 8rem;
+  margin-inline: auto;
 }
 
 .button.primary-button:hover {

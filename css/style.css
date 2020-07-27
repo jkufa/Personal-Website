@@ -244,8 +244,14 @@
   background-color: var(--tertiary-color);
 }
 
+.site-main .contact .row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .site-main .socials{
-  padding: 4rem 1rem;
+  padding: 0rem 2rem;
 }
 
 .site-main .contact .socials img{
