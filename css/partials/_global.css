@@ -81,3 +81,10 @@ button:hover,
 .section {
   background-size:cover;
 }
+
+#bottom {
+  position: absolute;
+  bottom:1rem;
+  right:40%;
+  left:40%;
+}
