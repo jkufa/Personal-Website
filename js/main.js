@@ -42,8 +42,4 @@ $(document).ready(function() {
     direction: 'vertical',
     anchors: ['home','about','experience','projects','contact'],    
   });
-  $('#pagepiling_hor').pagepiling({
-    menu: null,
-    direction: 'horizontal',
-  });
 });
