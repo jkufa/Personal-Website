@@ -47,15 +47,23 @@
   padding-left: 10rem;
   height: fit-content;
   min-height: 100%;
+  text-align: center;
+}
+
+.site-main .site-banner .site-title{
+  font-weight: 500;
+  text-align: center;
 }
 
 .site-main .site-banner .site-title h3 {
   font-weight: 500;
+  font-size: 2rem;
 }
 
 .site-main .site-banner .site-title h1 {
-  padding-top: 35%;
+  padding-top: 20%;
   font-size: 5rem;
+
 }
 
 .site-main .site-banner .site-title h4 {
@@ -75,6 +83,8 @@
 
 /* Start About */
 .site-main .about {
+  height: fit-content;
+  min-height: 100%;
   padding: 20rem 5rem;
   background: var(--my-black) no-repeat center fixed;
   -webkit-background-size: cover;
@@ -238,6 +248,15 @@
 /* End Projects */
 
 /* Start Contact */
+.site-main .contact .title-text {
+  transition: all .8s ease;
+  color: var(--my-black);
+}
+.site-main .contact .title-text:hover {
+  transition: all 0.5s ease;
+  color: var(--my-white);
+}
+
 .site-main .contact {
   height: 100%;
   padding: 8rem .5rem 0 .5rem;
