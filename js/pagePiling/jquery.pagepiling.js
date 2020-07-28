@@ -165,10 +165,11 @@
         //init
         PP.setAllowScrolling(true);
 
-        //creating the navigation dots
-        if (!$.isEmptyObject(options.navigation) ) {
-            addVerticalNavigation();
-        }
+        // I don't want dots
+        // //creating the navigation dots
+        // if (!$.isEmptyObject(options.navigation) ) {
+        //     addVerticalNavigation();
+        // }
 
          var zIndex = $('.pp-section').length;
 

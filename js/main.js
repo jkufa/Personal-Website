@@ -14,25 +14,8 @@ $(document).ready(function() {
   $('.experience .button-group #btn1').trigger('click');
 
   $('.experience .grid .popup-link').magnificPopup({
-      type: 'image',
-      gallery: { enabled: true }
-  });
-// Projects
-  let $btn_proj = $('.projects .button-group button');
-  $btn_proj.click(function(e){
-    $('.projects .button-group button').removeClass('active');
-    e.target.classList.add('active');
-
-    let selector = $(e.target).attr('data-filter');
-    $('.projects .grid').isotope({
-      filter: selector
-    });
-    return false;
-  })
-  $('.projects .button-group #btn1').trigger('click');
-
-  $('.projects .grid .popup-link').magnificPopup({
-      type: 'image',
+      type: 'inline',
+      midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
       gallery: { enabled: true }
   });
 
@@ -41,5 +24,8 @@ $(document).ready(function() {
     menu: null,
     direction: 'vertical',
     anchors: ['home','about','experience','projects','contact'],    
+    navigation: {
+      bulletsColor: 'null'
+    }
   });
 });

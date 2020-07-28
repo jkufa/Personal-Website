@@ -1,0 +1,14 @@
+
+
+.white-popup {
+  position: relative;
+  background: var(--my-white);
+  padding: 20px;
+  width: 85%;
+  margin: 20px auto;
+  padding-top: 3rem;
+}
+
+.white-popup > h4{
+  font: normal 700 25px/12px var(--rubik);
+}
