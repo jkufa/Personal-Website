@@ -18,6 +18,11 @@ h1,h2,h3,h4{
   background-color: var(--my-black);
   /* box-shadow: 0px 2px 10px black; */
 }
+
+.header .active a{
+  font: var(--gradient-light);
+}
+
 .header .menu .navbar .navbar-brand{
   padding: 0 .5rem 0 .5rem;
   border-radius:100%;
@@ -40,6 +45,8 @@ h1,h2,h3,h4{
   background-clip: text;
   transition: all 0.2s ease 0s;
 }
+
+
 /* End Nav */
 
 /* Start Banner */
@@ -150,7 +157,7 @@ h1,h2,h3,h4{
   background: var(--secondary-color);
 }
 
-.site-main .experience .img img{
+.site-main .experience .jobs .img img{
   width: 23rem;
 }
 
@@ -214,10 +221,14 @@ h1,h2,h3,h4{
 /* End Experience */
 
 /* Start Projects */
+.site-main .projects .img img{
+  width: 23rem;
+}
+
 .site-main .projects {
-  padding: 8rem 5rem;
+  padding: 4rem 5rem;
   background: var(--primary-color);
-  height: fit-content;
+  height: max-content;
   min-height: 100%;
 }
 
@@ -254,7 +265,14 @@ h1,h2,h3,h4{
   opacity: 60%;
 }
 
-.site-main .projects .img img{
+.projs > img {
+  width: 40rem;
+}
+.svg > img {
+  width: 20rem;
+}
+
+.site-main .projects img{
   transition: all .8s ease;
   border:6px solid transparent;
   box-shadow: var(--box-shadow);
