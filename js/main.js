@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-
-  
   // Experience
   let $btn_exp = $('.experience .button-group button');
   $btn_exp.click(function(e){
