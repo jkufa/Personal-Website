@@ -112,6 +112,10 @@ h1,h2,h3,h4{
   transition: all 0.8s ease 0s;
 }
 
+.site-main .about .para > a {
+  color: var(--tertiary-color);
+}
+
 .site-main .about .about-title h2 > span:hover {
   color: var(--tertiary-color);
   transition: all 0.5s ease 0s;
@@ -184,14 +188,9 @@ h1,h2,h3,h4{
 
 .site-main .experience .grid .jobs >.title h4{
   font: normal 700 25px/12px var(--rubik);
+  line-height: 1.3rem;
   color: var(--my-white);
 }
-
-.site-main .experience .grid .jobs >.title h4{
-  font: normal 700 25px/12px var(--rubik);
-  color: var(--my-white);
-}
-
 
 .site-main .experience .title-text h1:hover{
   font: normal 700 25px/12px var(--rubik);
@@ -251,8 +250,9 @@ h1,h2,h3,h4{
   padding-left: 3rem;
 }
 
-.site-main .projects .grid .jobs >.title h4{
+.site-main .projects .grid .projs >.title h4{
   font: normal 700 25px/12px var(--rubik);
+  line-height: 1.3rem;
 }
 
 .site-main .projects .title-text h1:hover{
