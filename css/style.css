@@ -3,6 +3,21 @@
 @import url(./partials/_global.css);
 @import url(./partials/popups.css);
 
+
+/* Make Scrollbar invisible */
+div * {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+  }  ::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+  }  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+
 .section {
   height: fit-content;
   min-height: 100%;
@@ -225,7 +240,7 @@ h1,h2,h3,h4{
 }
 
 .site-main .projects {
-  padding: 4rem 5rem;
+  padding: 4rem 0rem;
   background: var(--primary-color);
   height: max-content;
   min-height: 100%;
