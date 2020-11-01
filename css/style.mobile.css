@@ -1,0 +1,25 @@
+
+  @import url(./fonts.css);
+  @import url(./partials/_variables.css);
+  @import url(./partials/_global.css);
+  @import url(./partials/popups.css);
+  
+  .header .menu .navbar .navbar-brand{
+    border-radius:100%;
+  }
+  
+  .header .menu .navbar {
+    padding: 1rem 25rem;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+  
+  .header .menu .nav-item .nav-link {
+    padding: .5rem;
+    color: var(--my-white);
+    text-align: center;
+  }

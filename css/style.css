@@ -4,6 +4,10 @@
 @import url(./partials/popups.css);
 
 
+#particles-js {
+  height: 100vh;
+}
+
 /* Make Scrollbar invisible */
 div * {
   scrollbar-width: none; /* Firefox */
@@ -17,6 +21,18 @@ div * {
     background-color: transparent;
   }
 }
+
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.fit-image{
+  max-width: 100%;
+  object-fit: cover;
+  height: 30rem; /* only if you want fixed height */
+  }
 
 .section {
   height: fit-content;
@@ -79,6 +95,8 @@ h1,h2,h3,h4{
 .site-main .site-banner .site-title{
   font-weight: 500;
   text-align: center;
+  position: absolute;
+  min-width: 100%;
 }
 
 .site-main .site-banner .site-title h3 {
@@ -97,8 +115,10 @@ h1,h2,h3,h4{
 }
 
 .site-main .site-banner .banner-image > img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  width: auto\9; /* ie8 */
+
 }
 
 .site-main .site-banner .site-button button {
@@ -161,9 +181,6 @@ h1,h2,h3,h4{
 /* End About */
 
 /* Start Experience */
-.job3 > img{
-  width: 40rem;
-}
 
 .site-main .section .experience  {
   height: fit-content;
@@ -177,7 +194,9 @@ h1,h2,h3,h4{
 }
 
 .site-main .experience .jobs .img img{
-  width: 23rem;
+  max-width: 23rem;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
 .site-main .experience .title-text {
@@ -222,7 +241,7 @@ h1,h2,h3,h4{
   border:6px solid transparent;
   box-shadow: var(--box-shadow);
   height: 15rem;
-  width: 22rem;
+  width: 20rem;
   object-fit: cover;
 }
 
@@ -280,9 +299,7 @@ h1,h2,h3,h4{
   opacity: 60%;
 }
 
-.projs > img {
-  width: 40rem;
-}
+
 .svg > img {
   width: 20rem;
 }
@@ -292,7 +309,7 @@ h1,h2,h3,h4{
   border:6px solid transparent;
   box-shadow: var(--box-shadow);
   height: 15rem;
-  width: 22rem;
+  width: 20rem;
   object-fit: cover;
 }
 

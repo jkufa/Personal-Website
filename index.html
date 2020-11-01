@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./css/jquery.pagepiling.css">
   <!--Custom CSS-->
   <link rel = "stylesheet" href="./css/style.css">
+  <link rel = "stylesheet" href="./css/title.css">
 
 </head>
 <body>
@@ -28,7 +29,7 @@
   <div class="menu">
     <!-- TODO: Make transparent when on top of page -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">&#128526</a>
+      <a class="navbar-brand" href=".">&#128526</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
        </button>
@@ -52,7 +53,7 @@
              <a class="nav-link" href="#contact">Contact</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./files/jack-kufa-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+             <a class="nav-link" href="https://raw.githubusercontent.com/jkufa/Resume/master/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
            </li>
            <!-- <li class="nav-item">
              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -71,11 +72,14 @@
      <!-- Start Banner -->
      <div class="section">
        <section class="site-banner">
+        <div id="particles-js">
          <!-- Row w/ 2 columns, 6 col width & 12 medium-->
          <!-- <div class="row"> -->
            <div class="site-title">
-             <h1 class="title-text">What's Crackin'?</h1>
-             <h3 class="title-text">I'm Jack Kufa. I think building things are cool.</h3>
+              <h1 class="title-text">
+                <div id="randIntro" class="fadeIn"></div>
+              </h1>
+             <h3 class="title-text">I'm Jack Kufa. I think building things is cool.</h3>
              <h4 class="subtitle-text">Stay a while, make yourself at home!</h4>
             <div class="flex-row flex-wrap">
               <button onClick="window.location.href='#contact'" type="button" class="btn button primary-button mr-4 text-uppercase">Contact</button>
@@ -85,7 +89,8 @@
             <!-- <div class="col-lg-6 col-md-12">
               <img src="/images/retreiver.jpg" alt="banner-img" class="img-fluid">
             </div> -->
-          <!-- </div> -->
+            <!-- </div> -->
+          </div>
         </section>
     </div>
       <!--End Banner -->
@@ -132,7 +137,7 @@
           <div id="job1" class="white-popup mfp-hide">
             <div class="row">
               <div class="col-lg-6 col-md-12 jobs">
-                <img src="/images/rov.jpg" alt="job1">
+                <img src="/images/rov.jpg" alt="job1" class="fit-image">
                 <div class="title py-4">
                   <h4 class="text-uppercase">Underwater Robotics</h4>
                   <span class="text-secondary"><p>Past</p></span>
@@ -159,7 +164,7 @@
           <div id="job2" class="white-popup mfp-hide">
             <div class="row">
               <div class="col-lg-6 col-md-12 jobs">
-                <img src="/images/spark_team_2.jpg" alt="job2">
+                <img src="/images/spark_team_2.jpg" alt="job2" class="fit-image">
                 <div class="title py-4">
                   <h4 class="text-uppercase">Embyr Technologies LLC</h4>
                   <span class="text-secondary"><p>Past</p></span>
@@ -186,7 +191,7 @@
           <div id="job3" class="white-popup mfp-hide">
             <div class="row">
               <div class="col-lg-6 col-md-12 job3">
-                <img src="/images/yaskawa.jpg" alt="job3">
+                <img src="/images/yaskawa.jpg" alt="job3" class="fit-image">
                 <div class="title py-4">
                   <h4 class="text-uppercase">Yaskaw America Inc.</h4>
                   <span class="text-secondary"><p>Past</p></span>
@@ -210,7 +215,10 @@
           <div id="job4" class="white-popup mfp-hide">
             <div class="row">
               <div class="col-lg-6 col-md-12 job3">
-                <img src="/images/p1.jpg" alt="job3">
+                <video autoplay loop>
+                  <source src="/videos/cinemacraft.mp4" alt="job4" type="video/mp4" class="img-fluid">
+                Your browser does not support the video tag.
+                </video> 
                 <div class="title py-4">
                   <h4 class="text-uppercase">CinemaCraft LLC</h4>
                   <span class="text-secondary"><p>Present</p></span>
@@ -219,10 +227,13 @@
               <div class="col-lg-6 col-md-12">
                 <div class="paragraph py-4 w-75">
                   <p class="para">
-                    This Summer I've been working on some independent contract work with CinemaCraft LLC. We make custom Minecraft plugins that implement custom, unique scenes for content creators to experience.
+                    This past Summer I worked on some independent contract work with CinemaCraft LLC. They make custom Minecraft plugins that implement custom, unique scenes for content creators to experience.
                   </p>
                   <p class="para">
-                    I'm working in IntelliJ & programming in Java, interfacing with the Spigot API and a large set of proprietary codebase. I'm also working with poms and doing a lot remote server work (ssh, scp, etc.).
+                    I worked in IntelliJ & developed in Java, interfacing with the Spigot API and a large set of proprietary codebase. Plugin deployment was done with Maven, and deploying and accessing servers involved remote accessing (ssh, scp, etc.). Overall, my work contributed to over 9 Million YouTube views for content creators.
+                  </p>
+                  <p class="para">
+                    👈👈👈 Here's a small example of the work I did!
                   </p>
                 </div>
               </div>
@@ -245,7 +256,7 @@
                     <div class="jobs">
                       <div class="img">
                         <a class="popup-link" href="#job1">
-                          <img src="/images/rov.jpg" alt="job1">
+                          <img src="/images/rov.jpg" alt="job1" class="fit-image">
                         </a>
                       </div>
                       <div class="title py-4">
@@ -258,7 +269,7 @@
                   <div class="jobs">
                     <div class="img">
                       <a class="popup-link" href="#job2">
-                        <img src="/images/spark_team_2.jpg" alt="job2">
+                        <img src="/images/spark_team_2.jpg" alt="job2" class="fit-image">
                       </a>
                     </div>
                     <div class="title py-4">
@@ -271,7 +282,7 @@
                   <div class="jobs">
                     <div class="img job3">
                       <a class="popup-link" href="#job3">
-                        <img src="/images/yaskawa.jpg" alt="job3">
+                        <img src="/images/yaskawa.jpg" alt="job3" class="fit-image">
                       </a>
                     </div>
                     <div class="title py-4">
@@ -280,16 +291,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item present">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item past">
                   <div class="jobs">
                     <div class="img">
                       <a class="popup-link" href="#job4">
-                        <img src="/images/p1.jpg" alt="job4">
+                        <img src="/images/cinemacraft.jpg" alt="job4" class="fit-image">
                       </a>
                     </div>
                     <div class="title py-4">
                       <h4 class="text-uppercase">CinemaCraft LLC</h4>
-                      <span class="text-secondary"><p>Present</p></span>
+                      <span class="text-secondary"><p>Past</p></span>
                     </div>
                   </div>
                 </div>
@@ -308,7 +319,7 @@
       <div id="proj1" class="white-popup mfp-hide">
         <div class="row">
           <div class="col-lg-6 col-md-12 svg">
-            <img src="/images/wellness.svg" alt="proj1">
+            <img src="/images/wellness.svg" alt="proj1" class="fit-image">
             <div class="title py-4">
               <h4 class="text-uppercase">Wellness Trainer</h4>
               <span class="text-secondary"><p>Past, Hackathon</p></span>
@@ -333,7 +344,7 @@
       <div id="proj2" class="white-popup mfp-hide">
         <div class="row">
           <div class="col-lg-6 col-md-12 projs">
-            <img src="/images/gcc.jpg" alt="proj2">
+            <img src="/images/gcc.jpg" alt="proj2" class="fit-image">
             <div class="title py-4">
               <h4 class="text-uppercase">Controller Modding</h4>
               <span class="text-secondary"><p>Present, Personal</p></span>
@@ -354,7 +365,7 @@
       <div id="proj3" class="white-popup mfp-hide">
         <div class="row">
           <div class="col-lg-6 col-md-12 projs">
-            <img src="/images/doublecross.jpg" alt="proj3">
+            <img src="/images/doublecross.jpg" alt="proj3" class="fit-image">
             <div class="title py-4">
               <h4 class="text-uppercase">DoubleCross</h4>
               <span class="text-secondary"><p>Past, Hackathon</p></span>
@@ -383,7 +394,7 @@
       <div id="proj4" class="white-popup mfp-hide">
         <div class="row">
           <div class="col-lg-6 col-md-12 projs">
-            <img src="/images/pokemon.png" alt="proj3">
+            <img src="/images/pokemon.png" alt="proj3" class="fit-image">
             <div class="title py-4">
               <h4 class="text-uppercase">Pokemon Team Generator</h4>
               <span class="text-secondary"><p>Future, Personal</p></span>
@@ -425,7 +436,7 @@
                 <div class="projs">
                   <div class="img">
                     <a class="popup-link2" href="#proj1">
-                      <img src="/images/wellness.svg" alt="proj1">
+                      <img src="/images/wellness.svg" alt="proj1" class="fit-image">
                     </a>
                   </div>
                   <div class="title py-4">
@@ -438,7 +449,7 @@
                 <div class="projs">
                   <div class="img">
                     <a class="popup-link2" href="#proj2">
-                      <img src="/images/gcc.jpg" alt="proj2">
+                      <img src="/images/gcc.jpg" alt="proj2" class="fit-image">
                     </a>
                   </div>
                   <div class="title py-4">
@@ -451,7 +462,7 @@
                 <div class="projs">
                   <div class="img">
                     <a class="popup-link2" href="#proj3">
-                      <img src="/images/doublecross.jpg" alt="proj3">
+                      <img src="/images/doublecross.jpg" alt="proj3" class="fit-image">
                       </a>
                     </div>
                     <div class="title py-4">
@@ -464,7 +475,7 @@
                   <div class="projs">
                     <div class="img">
                       <a class="popup-link2" href="#proj4">
-                        <img src="/images/pokemon.png" alt="proj4">
+                        <img src="/images/pokemon.png" alt="proj4" class="fit-image">
                       </a>
                     </div>
                     <div class="title py-4">
@@ -573,6 +584,8 @@
       <!-- Page Piling -->
       <script src="./js/pagePiling/jquery.pagepiling.js"></script>
       <script type="text/javascript" src="/js/pagePiling/jquery.pagepiling.js"></script>
+      <!-- Particle.js -->
+      <script src="./js/particles.js"></script>
       <!-- Custom JS -->
       <script src="./js/main.js"></script>
 
