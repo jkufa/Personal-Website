@@ -3,6 +3,9 @@
 @import url(./partials/_global.css);
 @import url(./partials/popups.css);
 
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
 
 #particles-js {
   height: 100vh;
