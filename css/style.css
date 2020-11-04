@@ -3,8 +3,6 @@
 @import url(./partials/_global.css);
 @import url(./partials/popups.css);
 
-
-
 #particles-js {
   height: 100vh;
 }
@@ -136,7 +134,7 @@ h1,h2,h3,h4{
 /* Start About */
 .site-main .about {
   height: fit-content;
-  min-height: 100%;
+  min-height: 100vh;
   padding: 20rem 5rem;
   background: var(--my-black) no-repeat center fixed;
   -webkit-background-size: cover;
@@ -163,7 +161,8 @@ h1,h2,h3,h4{
 }
 
 .site-main .about .about-title .paragraph > p {
-  padding: .4rem .1rem;
+  padding: .4rem .2rem;
+  padding-right: 10%;
   color: var(--my-white);
 }
 
@@ -304,17 +303,11 @@ h1,h2,h3,h4{
   opacity: 60%;
 }
 
-
-.svg > img {
-  width: 20rem;
-}
-
 .site-main .projects img{
   transition: all .8s ease;
   border:6px solid transparent;
   box-shadow: var(--box-shadow);
   height: 15rem;
-  width: 20rem;
   object-fit: cover;
 }
 
@@ -338,12 +331,10 @@ h1,h2,h3,h4{
 
 .site-main .contact {
   width: 100%;
-  height: 100%;
   padding: 8rem .5rem 0 .5rem;
   background-color: var(--tertiary-color);
   height: max-content;
-  min-height: 100%;
-  position: fixed;
+  height: 100vh;
   z-index: 10;
 }
 
@@ -354,7 +345,7 @@ h1,h2,h3,h4{
 }
 
 .site-main .socials{
-  padding: 0rem 2rem;
+  padding: 2rem 2rem;
   
 }
 

@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
   <!-- Pagepiling -->
-  <link rel="stylesheet" href="./css/jquery.pagepiling.css">
+  <link rel="stylesheet" media="only screen and (min-device-width: 800px)" href="./css/jquery.pagepiling.css">
   <!--Custom CSS-->
   <link rel = "stylesheet" href="./css/style.css">
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 640px)" href="./css/style-mobile.css" />
@@ -66,15 +66,17 @@
  <!--End Header -->
  
  <div id="pagepiling">
+   <!-- <div id="particles-js"></div> -->
    <!-- Start Main -->
    <main class="site-main">
      <!-- Start Banner -->
      <div class="section">
        <section class="site-banner">
-        <div id="particles-js">
-         <!-- Row w/ 2 columns, 6 col width & 12 medium-->
-         <!-- <div class="row"> -->
-           <div class="site-title">
+         <div id="particles-js">
+           <!-- Row w/ 2 columns, 6 col width & 12 medium-->
+           <!-- <div class="row"> -->
+             <a id="home"></a>
+             <div class="site-title">
               <h1 class="title-text">
                 <div id="randIntro" class="fadeIn"></div>
               </h1>
@@ -97,6 +99,7 @@
       <!-- Start About -->
       <div class="section hidden-scrollbar pp-scrollable section-scrollable">
         <section class="about ">
+          <a id="about"></a>
           <div class="inner">
             <div class="row">
               <div class="col-lg-6 col-md-12">
@@ -108,7 +111,7 @@
                 <h2>
                   <span>About Me</span>
                 </h2>
-                <div class="paragraph py-4 w-75">
+                <div class="paragraph">
                   <p class="para">
                     I'm Jack Kufa, Senior at Missouri S&T pursuing a degree in Computer Engineering. "I think computers are cool" has been a defining tagline for me my entire life. This deep interest has been a driving force for me in my professional career.
                   </p>
@@ -241,6 +244,7 @@
         </div>
 
         <section class="experience">
+          <a id="experience"></a>
             <div class="container">
               <div class="exp-title pb-5">
                 <h1 class="title-text">Stuff I've Done</h1>
@@ -312,7 +316,6 @@
     
     <!-- Start Projects -->
     <div class="section hidden-scrollbar pp-scrollable">      
-
       <!-- Popup -->
     <div class="projects">
       <div id="proj1" class="white-popup mfp-hide">
@@ -419,6 +422,7 @@
       </div>
 
       <section class="projects">
+      <a id="projects"></a>
         <div class="container">
           <div class="exp-title pb-5">
             <h1 class="title-text">Stuff I've Made</h1>
@@ -494,6 +498,7 @@
       <!-- Start Contact -->
       <div class="section hidden-scrollbar pp-scrollable">
         <section class="contact">
+          <a id="contact"></a>
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center contact-title">
@@ -522,8 +527,6 @@
                       <!-- <h5 class="card-title font-rubik">LinkedIn</h5> -->
                     </div>
                   </div>
-              <!-- </div>
-              <div class="row"> -->
                   <div class="socials">
                     <div class="socials-img text-center py-4">
                       <a href="https://twitter.com/jackkufa"target="_blank" rel="noopener noreferrer">
@@ -541,7 +544,6 @@
                       </a>
                     </div>
                     <div class="card-body text-center">
-                      <!-- <h5 class="card-title font-rubik">GitHub</h5> -->
                     </div>
                   </div>
               </div>
@@ -554,8 +556,9 @@
           </div>
         </section>
       </div>
-    </main>
-</div>
+
+      </main>
+    </div>
       
       
       <!--Jquery JS-->

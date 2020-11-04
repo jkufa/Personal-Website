@@ -8,7 +8,6 @@ $(document).ready(function() {
     "Hello!",
     "What's Up?",
     "How's it Going?",
-    "How's your day been?"
   ];
   var intro = document.getElementById("randIntro");
   var interval = 3000;
@@ -16,13 +15,8 @@ $(document).ready(function() {
   // randomNumber = Math.floor((Math.random()*intros.  length));
   function change() {
     randomNumber = Math.floor((Math.random()*intros.  length));
-    // intro.eq(intros[randomNumber]).fadeIn(2000).delay(2000).fadeOut(2000,change())
-    // intro.innerHTML = intros[randomNumber].fadeIn(2000).delay(2000).fadeOut(2000)
     intro.innerHTML = intros[randomNumber]
   }
-
-  var child = document.getElementById('hidescrollbar');
-  child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
 
   // Experience
   let $btn_exp = $('.experience .button-group button');
@@ -62,11 +56,13 @@ $(document).ready(function() {
   });
   
   // Pagepiling
+  if(window.innerWidth > 640) {
     $('#pagepiling').pagepiling({
       direction: 'vertical',
       anchors: ['home','about','experience','projects','contact'],    
       navigation: false
     });
+  }
 
   particlesJS.load('particles-js', '/js/particlesjs.json', function() {
     console.log('callback - particles.js config loaded');

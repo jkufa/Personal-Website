@@ -8,7 +8,6 @@
   }
   
   .header .menu .navbar {
-    padding: 1rem 25rem;
     text-align: center;
     display: inline-block;
   }
@@ -25,12 +24,18 @@
 
 .section {
   height: fit-content;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 h1,h2,h3,h4{
   font: normal 700 25px/20px var(--rubik);
 }
+
+.fit-image{
+  max-width: 100%;
+  object-fit: cover;
+  height: 15rem; /* only if you want fixed height */
+  }
 
 /* Start Nav */
 /* Padding */
@@ -53,8 +58,8 @@ h1,h2,h3,h4{
 }
 
 .header .menu .nav-item .nav-link {
-  font: normal 500 15px/2px "Rubik";
-  padding: 1rem;
+  font: normal 500 25px/2px "Rubik";
+  padding: 1.3rem;
   color: var(--my-white);
 }
 
@@ -80,24 +85,25 @@ h1,h2,h3,h4{
 .site-main .site-banner .site-title{
   font-weight: 500;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 6rem;
   height: 100vh;
   min-height: fit-content;
 }
 
 .site-main .site-banner .site-title h3 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .site-main .site-banner .site-title h1 {
-  padding-top: 20%;
-  font-size: 5rem;
+  font-size: 3rem;
 
 }
 
 .site-main .site-banner .site-title h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .site-main .site-banner .banner-image > img {
@@ -120,14 +126,22 @@ h1,h2,h3,h4{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-left: 10rem;
   color: var(--my-white);
+  text-align: center;
 }
 
 .site-main .about .about-title h2 > span {
   display:block;
   font: normal bold 49px/60px "Rubik";
   transition: all 0.8s ease 0s;
+  padding-top: 5%;
+}
+
+.site-main .about .about-title .paragraph > p {
+  padding-top: 1rem;
+  padding-right: 10%;
+  padding-left: 10%;
+  color: var(--my-white);
 }
 
 .site-main .about .para > a {
@@ -139,16 +153,12 @@ h1,h2,h3,h4{
   transition: all 0.5s ease 0s;
 }
 
-.site-main .about .about-title .paragraph > p {
-  padding: .4rem .1rem;
-  color: var(--my-white);
-}
-
 .site-main .about .about-img {
   border: 10px solid var(--tertiary-color);
   border-radius: 50%;
   width:50%;
-  margin-left: 15%;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 2px 20px black;
 }
 
@@ -164,10 +174,6 @@ h1,h2,h3,h4{
 /* End About */
 
 /* Start Experience */
-.job3 > img{
-  width: 20rem;
-}
-
 .site-main .section .experience  {
   height: fit-content;
   min-height: 100%;
@@ -175,17 +181,18 @@ h1,h2,h3,h4{
 
 .site-main .experience {
   height:max-content;
-  padding: 8rem 0rem;
+  padding: 5rem 0rem;
   background: var(--secondary-color);
 }
 
 .site-main .experience .jobs .img img{
-  width: 23rem;
+  width: 25rem;
 }
 
 .site-main .experience .title-text {
   transition: all .8s ease;
   color: var(--my-white);
+  text-align: center;
 }
 
 .site-main .experience .title-text:hover {
@@ -196,7 +203,7 @@ h1,h2,h3,h4{
 .site-main .experience .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/50px var(--rubik);
+  font: normal 500 15px/50px var(--rubik);
   color: #f0faf994;
 }
 
@@ -239,11 +246,11 @@ h1,h2,h3,h4{
 
 /* Start Projects */
 .site-main .projects .img img{
-  width: 23rem;
+  width: 25rem;
 }
 
 .site-main .projects {
-  padding: 4rem 0rem;
+  padding: 3rem 0rem;
   background: var(--primary-color);
   height: max-content;
   min-height: 100%;
@@ -261,7 +268,10 @@ h1,h2,h3,h4{
 .site-main .projects .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/50px var(--rubik);
+  font: normal 500 15px/50px var(--rubik);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-main .projects .button-group button + button {
@@ -318,9 +328,10 @@ h1,h2,h3,h4{
 }
 
 .site-main .contact {
-  height: 100vh;
-  padding: 8rem .5rem 0 .5rem;
-  background-color: var(--tertiary-color);
+  padding: 3rem 0rem;
+  background: var(--tertiary-color);
+  height: max-content;
+  min-height: 100vh;
 }
 
 .site-main .contact .row {
@@ -330,7 +341,7 @@ h1,h2,h3,h4{
 }
 
 .site-main .socials{
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
 }
 
 .site-main .contact .socials img{
@@ -343,15 +354,6 @@ h1,h2,h3,h4{
 
 .site-main .contact h2{
   font:bold 500 80px/20px var(--rubik);
+  margin-bottom: 10%
 }
 /* End Contact */
-
-/* Footer */
-footer.footer-area {
-  padding: 10rem 0;
-}
-
-/* 315159 */
-.font-rubik {
-  font:normal 500 20px/20px var(--rubik);
-}
