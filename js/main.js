@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  // Intro Title
   var intros = [
     "Welcome!",
     "What's Crackin?",
@@ -17,6 +19,19 @@ $(document).ready(function() {
     randomNumber = Math.floor((Math.random()*intros.  length));
     intro.innerHTML = intros[randomNumber]
   }
+
+  // Emoji easter egg
+  $(function() {
+    var clicks = 0;
+    $(".nav-emoji").click(function() {
+      if(clicks >= 50) {
+        document.getElementById("sunglasses").src = '/images/PogU.png';
+      }
+      clicks++;
+      // $.cookie('stored_clicks', clicks);
+      console.log(clicks);
+    });
+  });
 
   // Experience
   let $btn_exp = $('.experience .button-group button');

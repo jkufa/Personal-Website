@@ -37,6 +37,10 @@ h1,h2,h3,h4{
   height: 15rem; /* only if you want fixed height */
   }
 
+  .site-main {
+    overflow-x: hidden; 
+  }
+
 /* Start Nav */
 /* Padding */
 .navbar{
@@ -250,7 +254,7 @@ h1,h2,h3,h4{
 }
 
 .site-main .projects {
-  padding: 3rem 0rem;
+  padding: 5rem 0rem;
   background: var(--primary-color);
   height: max-content;
   min-height: 100%;
@@ -328,7 +332,7 @@ h1,h2,h3,h4{
 }
 
 .site-main .contact {
-  padding: 3rem 0rem;
+  padding: 5rem 0rem;
   background: var(--tertiary-color);
   height: max-content;
   min-height: 100vh;
