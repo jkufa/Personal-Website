@@ -21,6 +21,9 @@ $(document).ready(function() {
     intro.innerHTML = intros[randomNumber]
   }
 
+  var child = document.getElementById('hidescrollbar');
+  child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
+
   // Experience
   let $btn_exp = $('.experience .button-group button');
   $btn_exp.click(function(e){
@@ -59,17 +62,11 @@ $(document).ready(function() {
   });
   
   // Pagepiling
-  // $.fn.pagepiling.moveTo('home');
-  if(window.innerWidth > 640) {
     $('#pagepiling').pagepiling({
       direction: 'vertical',
       anchors: ['home','about','experience','projects','contact'],    
       navigation: false
     });
-  }
-  else {
-    window.location.replace("http://mobile.kufa.io");
-  }
 
   particlesJS.load('particles-js', '/js/particlesjs.json', function() {
     console.log('callback - particles.js config loaded');
