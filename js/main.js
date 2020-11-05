@@ -20,15 +20,24 @@ $(document).ready(function() {
     intro.innerHTML = intros[randomNumber]
   }
 
+  function showImage() {
+    var img = document.getElementById('myImageId');
+    img.style.visibility = 'visible';
+}
+
   // Emoji easter egg
   $(function() {
     var clicks = 0;
+    var img = document.getElementById('pogu');
+    img.style.visibility = 'hidden';
     $(".nav-emoji").click(function() {
-      if(clicks >= 50) {
-        document.getElementById("sunglasses").src = '/images/PogU.png';
+      if(clicks >= 10) {
+        // document.getElementById("sunglasses").src = '/images/PogU.png';
+        img.style.visibility = 'visible';
+        document.getElementById('sunglasses').innerHTML = "";
+
       }
       clicks++;
-      // $.cookie('stored_clicks', clicks);
       console.log(clicks);
     });
   });
