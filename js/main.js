@@ -31,14 +31,14 @@ $(document).ready(function() {
     var img = document.getElementById('pogu');
     img.style.visibility = 'hidden';
     $(".nav-emoji").click(function() {
-      if(clicks >= 10) {
+      if(clicks >= 50) {
         // document.getElementById("sunglasses").src = '/images/PogU.png';
         img.style.visibility = 'visible';
         document.getElementById('sunglasses').innerHTML = "";
 
       }
       clicks++;
-      console.log(clicks);
+      // console.log(clicks);
     });
   });
 
