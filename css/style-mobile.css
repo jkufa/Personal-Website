@@ -31,6 +31,12 @@ h1,h2,h3,h4{
   font: normal 700 25px/20px var(--rubik);
 }
 
+.nav-emoji {
+  /* position: relative; */
+  position: fixed;
+  left: 10rem;
+}
+
 .fit-image{
   max-width: 100%;
   object-fit: cover;
