@@ -201,6 +201,8 @@ h1,h2,h3,h4{
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
+  display: table-cell;
 }
 
 .site-main .experience .jobs .img img{
@@ -267,13 +269,15 @@ h1,h2,h3,h4{
 }
 
 .site-main .projects {
-  padding: 4rem 0rem;
+  padding: 8rem 5rem;
   background: var(--primary-color);
-  height: max-content;
-  min-height: 100%;
-  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
-  z-index: 10;
+  width: 100vw;
+  display: table-cell;
 }
 
 .site-main .projects .title-text {
@@ -351,13 +355,10 @@ h1,h2,h3,h4{
   margin-right: auto;
 }
 
-.site-main .socials{
-  padding: 2rem 2rem;
-  
-}
 
 .site-main .contact .socials img{
   transition: all .8s ease;
+  object-fit: cover;
 }
 
 .site-main .contact .socials img:hover{
