@@ -58,9 +58,6 @@ h1,h2,h3,h4{
   /* box-shadow: 0px 2px 10px black; */
 }
 
-.nav-emoji img{
-}
-
 .header .active a{
   font: var(--gradient-light);
 }
@@ -345,16 +342,8 @@ h1,h2,h3,h4{
   padding: 8rem .5rem 0 .5rem;
   background-color: var(--tertiary-color);
   height: max-content;
-  height: 100vh;
   z-index: 10;
 }
-
-.site-main .contact .row {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .site-main .contact .socials img{
   transition: all .8s ease;
@@ -362,20 +351,16 @@ h1,h2,h3,h4{
 }
 
 .site-main .contact .socials img:hover{
-  transform: scale(1.1);
+  transform: scale(.9);
+  opacity: .6;
 }
 
 .site-main .contact h2{
   font:bold 500 80px/20px var(--rubik);
 }
+
 /* End Contact */
-
-/* Footer */
-footer.footer-area {
-  padding: 10rem 0;
-}
-
-/* 315159 */
-.font-rubik {
-  font:normal 500 20px/20px var(--rubik);
+#footer {
+  background: red; /*Same as body, you could also use transparent */
+  color: white;
 }

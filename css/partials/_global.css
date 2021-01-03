@@ -4,6 +4,10 @@
 	}
 }
 
+body {
+  background-color: var(--tertiary-color);
+}
+
 html {
   scroll-behavior: smooth;
 }

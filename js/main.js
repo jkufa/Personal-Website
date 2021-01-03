@@ -10,16 +10,17 @@ $(document).ready(function() {
     "Hello!",
     "What's Up?",
     "How's it Going?",
+    "Happy New Year!"
   ];
   var intro = document.getElementById("randIntro");
   var interval = 3000;
   var inst = setInterval(change, interval);
-  // randomNumber = Math.floor((Math.random()*intros.  length));
+
   function change() {
     randomNumber = Math.floor((Math.random()*intros.  length));
     intro.innerHTML = intros[randomNumber]
   }
-
+  
   function showImage() {
     var img = document.getElementById('myImageId');
     img.style.visibility = 'visible';
@@ -80,15 +81,15 @@ $(document).ready(function() {
   });
   
   // Pagepiling
-  if(window.innerWidth > 640) {
-    $('#pagepiling').pagepiling({
-      direction: 'vertical',
-      anchors: ['home','about','experience','projects','contact'],    
-      navigation: false
-    });
-  }
+  // if(window.innerWidth > 640) {
+  //   $('#pagepiling').pagepiling({
+  //     direction: 'vertical',
+  //     anchors: ['home','about','experience','projects','contact'],    
+  //     navigation: false
+  //   });
+  // }
 
-  particlesJS.load('particles-js', '/js/particlesjs.json', function() {
+  particlesJS.load('particles-js', '/js/particlesjs-snow.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
