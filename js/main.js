@@ -1,6 +1,15 @@
 $(document).ready(function() {
 
   // Intro Title
+  // "¡Hola!",
+  // "Bonjour!",
+  // "Guten Tag!",
+  // "こんにちは!",
+  // "你好!",
+  // "여보세요!",
+   // "مرحبا!",
+  // "Happy New Year!"
+
   var intros = [
     "Welcome!",
     "What's Crackin?",
@@ -15,12 +24,11 @@ $(document).ready(function() {
   var intro = document.getElementById("randIntro");
   var interval = 3000;
   var inst = setInterval(change, interval);
-
   function change() {
     randomNumber = Math.floor((Math.random()*intros.  length));
     intro.innerHTML = intros[randomNumber]
   }
-  
+
   function showImage() {
     var img = document.getElementById('myImageId');
     img.style.visibility = 'visible';
