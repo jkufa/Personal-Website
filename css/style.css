@@ -139,7 +139,7 @@ h1,h2,h3,h4{
 .site-main .about {
   height: fit-content;
   min-height: 100vh;
-  padding: 20rem 5rem;
+  padding: 10rem 5rem;
   background: var(--my-black) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -171,16 +171,18 @@ h1,h2,h3,h4{
 }
 
 .site-main .about .about-img {
-  border: 10px solid var(--tertiary-color);
   border-radius: 50%;
-  width:50%;
+  width:60%;
   margin-left: 15%;
   box-shadow: 0px 2px 20px black;
+}
+.site-main .about .col-lg-6.col-md-12.pic {
+  padding-bottom: 5rem;
 }
 
 .site-main .about .about-image img{
   transition: all .8s ease;
-  border:10px solid var(--tertiary-color);
+  border:5px solid var(--tertiary-color);
 }
 
 .site-main .about .about-image img:hover{
