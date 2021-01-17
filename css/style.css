@@ -139,7 +139,7 @@ h1,h2,h3,h4{
 .site-main .about {
   height: fit-content;
   min-height: 100vh;
-  padding: 10rem 5rem;
+  padding: 10rem min(20rem,20%);
   background: var(--my-black) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -150,6 +150,8 @@ h1,h2,h3,h4{
 }
 
 .site-main .about .about-title h2 > span {
+  padding-top:4rem;
+  color: var(--my-white);
   display:block;
   font: normal bold 49px/60px "Rubik";
   transition: all 0.8s ease 0s;
@@ -172,8 +174,7 @@ h1,h2,h3,h4{
 
 .site-main .about .about-img {
   border-radius: 50%;
-  width:60%;
-  margin-left: 15%;
+  /* margin-left: 15%; */
   box-shadow: 0px 2px 20px black;
 }
 .site-main .about .col-lg-6.col-md-12.pic {
@@ -181,6 +182,9 @@ h1,h2,h3,h4{
 }
 
 .site-main .about .about-image img{
+  width:50%;
+  margin: auto;    
+  display: block;
   transition: all .8s ease;
   border:5px solid var(--tertiary-color);
 }

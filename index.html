@@ -100,7 +100,6 @@
       <div class=" hidden-scrollbar pp-scrollable">
       <a id="about"></a>
         <section class="about ">
-          <div class="inner">
             <div class="row">
               <div class="col-lg-6 col-md-12 pic">
                 <div class="about-image">
@@ -127,7 +126,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </section>  
       </div>
       <!-- End About -->
@@ -244,7 +242,7 @@
           <div id="job5" class="white-popup mfp-hide">
             <div class="row">
               <div class="col-lg-6 col-md-12 job3">
-                <!-- <img src="/images/yaskawa.jpg" alt="job5" class="fit-image"> -->
+                <img src="/images/smg.png" alt="job5" class="fit-image">
                 <div class="title py-4">
                   <h4 class="text-uppercase">Service Management Group</h4>
                   <span class="text-secondary"><p>Future</p></span>
@@ -253,7 +251,7 @@
               <div class="col-lg-6 col-md-12">
                 <div class="paragraph py-4 w-75">
                   <p class="para">
-                    This summer I will be interning with Service Management Group! SMG is based in Kansas City, MO, building tools that provide customer and employee insight.
+                    This summer I will be interning with Service Management Group! SMG is based in Kansas City, MO. The company creates tools for businesses that provide customer and employee insight.
                   </p>
                 </div>
               </div>
@@ -428,23 +426,80 @@
           <div class="col-lg-6 col-md-12 projs">
             <img src="/images/pokemon.png" alt="proj3" class="fit-image">
             <div class="title py-4">
-              <h4 class="text-uppercase">Pokemon Team Generator</h4>
-              <span class="text-secondary"><p>Future, Personal</p></span>
+              <h4 class="text-uppercase">Top Track Tweeeter</h4>
+              <span class="text-secondary"><p>Present, Personal</p></span>
             </div>
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="paragraph py-4 w-75">
               <p class="para">
-                Pokemon Team Generator is an application configured to help with <a href="https://www.pokemon.com/us/strategy/making-the-jump-to-video-game-competitive-play/">VGC</a> teambuilding. It will create a full party of 6 Pokemon to be used competitvely based on data from <a href="">Pokemon Showdown</a> highest rated replays. This data is curated through use of the <a href="https://en.wikipedia.org/wiki/Apriori_algorithm">Apriori Algorithm</a>.
+                I wrote a python script that tweets a users top 5 spotify tracks for the past month. It uses the twython and spotipy libraries to interface with the Twitter and Spotify APIs. The script grabs the top 5 tracks, creates a playlist with them, and then tweets out both the top tracks and the playlist!
               </p>
               <p class="para">
-                The plan is for the backend to be python and to utilize a mongoDB database. This project has been a tool for learning about Machine Learning, as currently the learning model being used is a mix of unsupervised and associative learning.
+                This script is something that I keep updating and improving as time goes on. A future goal of mine is to properly set this up with something like crontab to have it automatically run on the first day of every month.
               </p>
               <p class="para">
-                The groundwork for this project has been laid out. It's currently on hiatus until I make more time for it.
+                <a href="https://twitter.com/JackKufa/status/1333791935400529920?s=20">Click here</a> to see an example use of the script!
               </p>
               <p class="para">
-              <a href="https://github.com/jkufa/Unsupervised-Associative-Learning-Practice">Checkout the GitHub Repo</a>
+              <a href="https://github.com/jkufa/Top-Track-Tweeter">Checkout the GitHub Repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="proj5" class="white-popup mfp-hide">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 projs">
+            <img src="/images/gamertweet.png" alt="proj3" class="fit-image">
+            <div class="title py-4">
+              <h4 class="text-uppercase">Gamer Tweet Detector</h4>
+              <span class="text-secondary"><p>Past, Hackathon</p></span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="paragraph py-4 w-75">
+              <p class="para">
+                This was a fun hackathon project I worked on with a friend. Using deep learning, the Gamer Tweet Detector evaluates tweets and returns a Gamer Tweet Percentage™ that determines how "gamer" that tweet is.
+              </p>
+              <p class="para">
+                The backend was built in python, using the Twython library to access the Twitter API and the sklearn library to perform logistic regression on our dataset. The frontend was built using the Flask as the primary subframework, with node used exclusively for javascript packages (not deployment).
+              </p>
+              <p class="para">
+                <a href="https://twitter.com/JackKufa/status/1333791935400529920?s=20">Click here</a> to see an example use of the script!
+              </p>
+              <p class="para">
+              <a href="https://github.com/jkufa/Top-Track-Tweeter">Checkout the GitHub Repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="proj6" class="white-popup mfp-hide">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 projs">
+            <img src="/images/drafty-landing.png" alt="proj3" class="fit-image">
+            <div class="title py-4">
+              <h4 class="text-uppercase">Drafty</h4>
+              <span class="text-secondary"><p>Present, Personal</p></span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="paragraph py-4 w-75">
+              <p class="para">
+                This project was started initally for my databases class, and has since been shifted into a full personal project.</p>
+              <p class="para">
+                I built a Discord bot and localhost web application for managing and automating a Pokemon Draft League. 
+                A Pokemon Draft League is a custom game mode for Pokemon battling, where coaches form teams and draft Pokemon to compete head to head. 
+                This application is able to automate a lot of the internal work involved in running such a league and it streamlines specific aspects of league upkeep such as updating rankings.
+              </p>
+              <p class="para">
+                The core interface is the Discord Bot, Drafty. Drafty is able to manage matches, pokemon teams and more!
+                The reason for a Discord bot core is that Discord is a vital platform for communication between players, and being able to query data in that same space is very convenient. 
+                With that said, the web application, built for administrative use, is perfect to getting a league up and running.
+              <p class="para">
+                <a href="https://github.com/jkufa/Drafty">Checkout the GitHub Repo</a>
+                </br><a href="https://raw.githubusercontent.com/jkufa/Drafty/master/report/final_report.pdf">Checkout the in-depth documentation</a>
               </p>
             </div>
           </div>

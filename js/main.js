@@ -12,7 +12,7 @@ $(document).ready(function() {
 
   var intros = [
     "Welcome!",
-    "What's Crackin?",
+    "What's Crackin'?",
     "Yo!",
     "Hey There!",
     "Hi!",
