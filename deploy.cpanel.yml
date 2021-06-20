@@ -2,9 +2,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/kufaasuz/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R files $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R videos $DEPLOYPATH
+    - /bin/cp /home/kufaasuz/site-main/index.html $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/css $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/js $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/iles $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/images $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/videos $DEPLOYPATH
