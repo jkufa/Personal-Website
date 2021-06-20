@@ -8,3 +8,4 @@ deployment:
     - /bin/cp -R /home/kufaasuz/site-main/files $DEPLOYPATH
     - /bin/cp -R /home/kufaasuz/site-main/images $DEPLOYPATH
     - /bin/cp -R /home/kufaasuz/site-main/videos $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/public_html $DEPLOYPATH
