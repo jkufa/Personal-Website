@@ -5,6 +5,6 @@ deployment:
     - /bin/cp /home/kufaasuz/site-main/index.html $DEPLOYPATH
     - /bin/cp -R /home/kufaasuz/site-main/css $DEPLOYPATH
     - /bin/cp -R /home/kufaasuz/site-main/js $DEPLOYPATH
-    - /bin/cp -R /home/kufaasuz/site-main/files $DEPLOYPATH
+    - /bin/cp -R /home/kufaasuz/site-main/iles $DEPLOYPATH
     - /bin/cp -R /home/kufaasuz/site-main/images $DEPLOYPATH
     - /bin/cp -R /home/kufaasuz/site-main/videos $DEPLOYPATH
