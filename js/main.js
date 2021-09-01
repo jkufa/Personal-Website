@@ -19,7 +19,6 @@ $(document).ready(function() {
     "Hello!",
     "What's Up?",
     "How's it Going?",
-    "Happy New Year!"
   ];
   var intro = document.getElementById("randIntro");
   var interval = 3000;
