@@ -5,13 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.5.0",
-    "fullpage.js": "^3.0.9",
     "jquery": "^3.5.1",
     "magnific-popup": "^1.1.0",
     "owl.carousel": "^2.3.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
