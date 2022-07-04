@@ -36,12 +36,3 @@ const App = () => {
 }
 
 export default App;
-
-// guy
-// front-end
-// coffee
-// design
-// accessibility
-// music
-// learning guitar
-// mustache

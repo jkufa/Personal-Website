@@ -1,4 +1,26 @@
+@import '../../styles/partials/animations';
+
 h1 {
   font-size: 6em;
   font-weight: 900;
+
+  span {
+    display: inline-block;
+    animation: fade-in-out 5s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+  }
+
+  ul {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 135px;
+    list-style: none;
+
+    li {
+      padding: 0 10px;
+      height: 115px;
+      margin-bottom: 45px;
+      display: block;
+    }
+  }
 }
