@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 import logo from "./logo.svg";
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
-import './App.scss';
+import './styles/App.scss';
 
 const App = () => {
   const particlesInit = useCallback(async (engine: Engine) => {

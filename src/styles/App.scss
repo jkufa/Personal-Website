@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,700&display=swap');
-@import './styles/variables';
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+@import './partials/variables';
 
 #tsparticles {
   opacity: 0;
@@ -75,12 +70,14 @@ a {
 button:hover {
   cursor: pointer;
   background-color: $secondary-dark;
+  box-shadow: 0 0 .75rem $secondary-darker inset;
   transition: .2s ease-out .1s;
 }
 
 button:focus {
   background-color: $primary;
   transition: .2s ease-out .1s;
+  box-shadow: none;
 }
 
 button:focus-visible {
