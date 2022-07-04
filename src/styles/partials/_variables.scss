@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'animations';
+@import 'mixins';
 
 $primary: $gracious-green;
 $primary-dark: darken($primary, 10%);

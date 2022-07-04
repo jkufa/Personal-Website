@@ -2,12 +2,11 @@ import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
-import logo from "./logo.svg";
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
-import './styles/App.scss';
 import Navbar from './components/Navbar/Navbar';
 import LandingHeader from './components/LandingHeader/LandingHeader';
+import './styles/App.scss';
 
 const App = () => {
   const particlesInit = useCallback(async (engine: Engine) => {

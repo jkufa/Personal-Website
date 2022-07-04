@@ -10,7 +10,7 @@ export default function Navbar({}: Props) {
         <li><button autoFocus>Home</button></li>
         <li><button>About</button></li>
         <li><button>Experience</button></li>
-        <li><button onClick={() => window.location.href=''}>Resume</button></li>
+        <li><button>Resume</button></li>
       </ul>
     </nav>
   )
