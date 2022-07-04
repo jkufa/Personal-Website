@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,700&display=swap');
 @import './styles/variables';
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#tsparticles {
+  opacity: 0;
+  z-index: -1;
+  animation: fadeIn 1.25s ease-in .25s forwards;
+}
+
 body {
   font-family: 'Aleo', serif;
   padding: 0;
