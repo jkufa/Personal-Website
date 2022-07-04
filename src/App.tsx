@@ -12,10 +12,11 @@ const App = () => {
     await loadFull(engine);
 }, []);
   return (
-    <div className="container">
+    <div className='container'>
+    <div className='loadingFrame'></div>
     <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
-    <div className="flex-item">
-      <div className="content">
+    <div className='flex-item'>
+      <div className='content'>
         <h1>Jack Kufa is pretty much guy.</h1>
         <div><nav><ul>
           <li><button autoFocus>Home</button></li>

@@ -1,24 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,700&display=swap');
 @import './partials/variables';
-
-#tsparticles {
-  opacity: 0;
-  z-index: -1;
-  animation: fadeIn 1.25s ease-in .25s forwards;
-}
-
-body {
-  font-family: 'Aleo', serif;
-  padding: 0;
-  margin: 0;
-  background-color: $background;
-  color: white;
-}
-
-h1 {
-  font-size: 6rem;
-  font-weight: 900;
-}
+@import './partials/globals';
 
 .container {
   display: flex;
@@ -27,59 +9,56 @@ h1 {
   align-items: center;
   height: 100vh;
   margin: 0 10%;
-}
 
-.flex-item {
-  margin: 2rem 4rem;
-}
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+  }
 
-nav {
-  justify-content: space-between;
-  width: fit-content;
-  background-color: $navbar;
-  border-radius: 1rem;
-  box-shadow: 0 .3rem 1rem $primary-darkest;
-}
+  .flex-item {
+    margin: 2rem 4rem;
 
-ul {
-  display: flex;
-  gap: 2px;
-  list-style: none;
-  padding: 0;
-  height: 100%;
-  margin: 0;
-}
+    nav {
+      justify-content: space-between;
+      width: fit-content;
+      background-color: $navbar;
+      border-radius: 1rem;
+      box-shadow: 0 .3rem 1rem $primary-darkest;
+      overflow: hidden;
 
-button {
-  font-family: inherit;
-  border: none;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  min-width: 4rem;
-  border-radius: 1rem;
-  text-align: center;
-  padding: 1rem 1.5rem;
-  color: white;
-}
+      ul {
+        display: flex;
+        gap: 2px;
+        list-style: none;
+        padding: 0;
+        height: 100%;
+        margin: 0;
 
-a {
-  text-decoration: none;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: $secondary-dark;
-  box-shadow: 0 0 .75rem $secondary-darker inset;
-  transition: .2s ease-out .1s;
-}
-
-button:focus {
-  background-color: $primary;
-  transition: .2s ease-out .1s;
-  box-shadow: none;
-}
-
-button:focus-visible {
-  outline: 1px solid white;
+        button {
+          background-color: transparent;
+          width: 100%;
+          height: 100%;
+          min-width: 4rem;
+          color: white;
+        }
+        
+        button:hover {
+          cursor: pointer;
+          background-color: $secondary-dark;
+          box-shadow: 0 0 .75rem $secondary-darker inset;
+          transition: .3s ease-out .1s;
+        }
+        
+        button:focus {
+          background-color: $primary;
+          transition: .2s ease-out .1s;
+          box-shadow: 0 0 1rem $secondary-darker;
+        }
+        
+        button:focus-visible {
+          outline: 1px solid white;
+        }
+      }
+    }
+  }
 }
