@@ -17,7 +17,6 @@ export default function LandingHeader({}: Props) {
   const iterate = () => {
     SetWord(words[i]);
     i < words.length - 1 ? i++ : i = 0;
-    console.log(i)
   }
   
   return (
