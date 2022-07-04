@@ -1,7 +1,9 @@
+@import 'animations';
+
 #tsparticles {
   opacity: 0;
-  z-index: -1;
-  animation: fadeIn 1.25s ease-in .25s forwards;
+  z-index: -2;
+  animation: fade-in 1.25s ease-in .25s forwards;
 }
 
 body {
