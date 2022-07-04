@@ -22,16 +22,18 @@
   }
 }
 
-@keyframes fade-in-out {
+@keyframes fade-in-up {
   0% {
     transform: translateY(-50%);
     opacity: 0;
   }
-  25% {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-  75% {
+}
+@keyframes fade-out-down {
+  0% {
     opacity: 1;
     transform: translateY(0);
   }
