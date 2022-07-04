@@ -1,1 +1,21 @@
-$primary-color: #00a789;
+@import 'colors';
+
+$primary: $gracious-green;
+$primary-dark: darken($primary, 10%);
+$primary-darker: darken($primary, 20%);
+$primary-darkest: darken($primary, 30%);
+$primary-light: lighten($primary, 10%);
+$primary-lighter: lighten($primary, 20%);
+$primary-lightest: lighten($primary, 30%);
+
+$secondary: $obsidian;
+$secondary-dark: darken($secondary, 3%);
+$secondary-darker: darken($secondary, 5%);
+$secondary-darkest: darken($secondary, 7.5%);
+$secondary-light: lighten($secondary, 10%);
+$secondary-lighter: lighten($secondary, 20%);
+$secondary-lightest: lighten($secondary, 30%);
+
+
+$background: $black-obsidian;
+$navbar: $obsidian;
