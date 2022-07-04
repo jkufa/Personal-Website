@@ -5,36 +5,16 @@ h1 {
   @include lg {
     font-size: 96px;
   }
-  @include md {
-    font-size: 64px;
-    margin-left: 0;
-    margin-right: 0;
-  }
   margin: .8em 1rem;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 900;
   span {
     display: inline-block;
-    &.fade-in {
-      animation: fade-in-up 2s cubic-bezier(0.23, 1, 0.32, 1) 1, fade-out-down 2s cubic-bezier(0.23, 1, 0.32, 1) 3s 1;
+    &.fade-in-out {
+      animation: fade-in-out 5s cubic-bezier(0.23, 1, 0.32, 1) infinite;
     }
     &.fade-out {
       animation: fade-out-down 2s cubic-bezier(0.23, 1, 0.32, 1) 1, fade-in-up 2s cubic-bezier(0.23, 1, 0.32, 1) 1.75s 1;
-    }
-  }
-
-  ul {
-    overflow: hidden;
-    position: relative;
-    float: right;
-    height: 135px;
-    list-style: none;
-
-    li {
-      padding: 0 10px;
-      height: 115px;
-      margin-bottom: 45px;
-      display: block;
     }
   }
 }

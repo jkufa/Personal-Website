@@ -2,6 +2,7 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 @keyframes fancy-transition {
   0% {
     transform: scaleX(0);
@@ -19,4 +20,44 @@
     transform: scaleX(0);
     transform-origin: right;
   }
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-out-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30%);
+    opacity: 0;
+  }  
 }
