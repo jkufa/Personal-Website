@@ -4,6 +4,7 @@
 
 .App {
   position: relative;
+  overflow: hidden;
 }
 
 .loading-frame {
@@ -41,7 +42,7 @@
       width: fit-content;
       background-color: $navbar;
       border-radius: 1rem;
-      box-shadow: 0 .3rem 1rem $primary-darkest;
+      box-shadow: 0 .3rem 1rem rgba($primary-darkest,.4);
       overflow: hidden;
 
       ul {
@@ -58,19 +59,20 @@
           height: 100%;
           min-width: 4rem;
           color: white;
+          transition: .2s ease-in;
         }
         
         button:hover {
           cursor: pointer;
-          background-color: $secondary-dark;
+          background: $secondary-dark;
           box-shadow: 0 0 .75rem $secondary-darker inset;
           transition: .3s ease-out .1s;
         }
         
         button:focus {
-          background-color: $primary;
           transition: .2s ease-out .1s;
           box-shadow: 0 0 1rem $secondary-darker;
+          background-color: $primary;
         }
         
         button:focus-visible {
