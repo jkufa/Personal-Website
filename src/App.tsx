@@ -8,6 +8,8 @@ import Navbar from './components/Navbar/Navbar';
 import LandingHeader from './components/LandingHeader/LandingHeader';
 import './styles/App.scss';
 
+
+
 const App = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
@@ -26,8 +28,8 @@ const App = () => {
       </section>
       {/* <section id='about'>
         <h1>About</h1>
-      </section>
-      <section id='experience'>
+      </section> */}
+      {/* <section id='experience'>
         <h1>Experience</h1>
       </section> */}
   </div>
