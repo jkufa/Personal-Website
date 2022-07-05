@@ -12,7 +12,7 @@ export default function LandingHeader({}: Props) {
     'coffee',
     'mustache',
   ];
-  const [word, SetWord] = useState('guy');
+  const [word, SetWord] = useState('development');
   
   const iterate = () => {
     SetWord(words[i]);

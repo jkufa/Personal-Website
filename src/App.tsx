@@ -14,7 +14,7 @@ const App = () => {
 }, []);
   return (
     <div className='App'>
-      <div className='loading-frame'><div className='container'></div></div>
+      {/* <div className='loading-frame'><div className='container'></div></div> */}
       <section id='home'>
         <div className='container'>
           <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
