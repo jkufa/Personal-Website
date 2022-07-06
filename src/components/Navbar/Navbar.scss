@@ -7,10 +7,14 @@
   align-self: flex-start;
 }
 
+header {
+  transition: 0.15s ease-out;
+}
+
 nav {
   @include lg {
     font-size: 18px;
-    margin-inline-start: 16%;
+    margin-inline-start: 20%;
   }
   @include md {
     font-size: 16px;
@@ -19,10 +23,9 @@ nav {
   margin-inline-start: 8%;
   font-size: 14px;
   width: fit-content;
-  background-color: $navbar;
   border-radius: 1em;
-  box-shadow: 0 .3em 1em rgba($primary-darkest,.4);
   overflow: hidden;
+  background-color: $navbar;
 
   ul {
     display: flex;

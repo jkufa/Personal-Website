@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import './Navbar.scss';
 
-type Props = {}
+type Props = {
+  isFullNav : boolean
+}
 
-export default function Navbar({}: Props) {
+export default function Navbar({isFullNav}: Props) {
   return (
-    <header className='navbar-main'>
-    <nav>
+    <header id='navbar' className={isFullNav ? 'full-nav navbar-main' : 'navbar-main'}>
+    <nav className={isFullNav ? '' : 'full-nav'}>
       <ul>
         <li><button autoFocus><FontAwesomeIcon icon={solid('house')} /></button></li>
         <li><button>About</button></li>
