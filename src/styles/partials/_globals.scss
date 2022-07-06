@@ -2,9 +2,9 @@
 
 #tsparticles {
   opacity: 0;
-  z-index: -2;
+  z-index: -1;
   animation: fade-in 1.25s ease-in .25s forwards;
-  scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
@@ -27,5 +27,5 @@ button {
   border: none;
   border-radius: 1em;
   text-align: center;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
 }

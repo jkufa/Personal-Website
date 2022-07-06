@@ -4,14 +4,14 @@
 
 .App {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .loading-frame {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  overflow: clip;
+  // overflow: clip;
   z-index: -1;
   .container {
     height: 100vh;
@@ -21,15 +21,26 @@
   transform: skew(311deg, 353deg) scale(3.5);
 }
 
-.container {
+.title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0 clamp(5%, 16%, 20%);
-
-  .flex-item {
-    margin: 2em 4em;
+  margin: 14% 8% 0;
+  @include lg {
+    margin: 14% 16% 0;
+}
+  @include md {
+    margin: 14% 16% 0;
   }
+  height: fit-content;
+  width: fit-content;
+}
+
+#hero {
+  height: fit-content;
+}
+
+#about {
+  height: 2000px;
 }

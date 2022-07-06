@@ -7,13 +7,15 @@ type Props = {}
 
 export default function Navbar({}: Props) {
   return (
+    <header className='navbar-main'>
     <nav>
       <ul>
         <li><button autoFocus><FontAwesomeIcon icon={solid('house')} /></button></li>
         <li><button>About</button></li>
-        <li><button>Experience</button></li>
+        <li><button>Work</button></li>
         <li><button>Resume</button></li>
       </ul>
     </nav>
+    </header>
   )
 }

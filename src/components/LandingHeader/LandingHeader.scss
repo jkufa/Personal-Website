@@ -2,18 +2,18 @@
 @import '../../styles/partials/variables';
 
 h1 {
+  display: inline-block;
   @include lg {
     font-size: 96px;
-    margin-left: 0;
-    margin-right: 0;
+    max-width: 916px;
   }
   @include md {
-    font-size:80px;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 64px;
+    max-width: 760px;
   }
-  margin: .8em 1rem;
-  font-size: 64px;
+  min-width: 260px;
+  max-width: 700px;
+  font-size: 48px;
   font-weight: 900;
   span {
     display: inline-block;

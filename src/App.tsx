@@ -14,21 +14,19 @@ const App = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
 }, []);
+  // TODO: 1. Create a parent section, where all sub sections live.
+  // TODO: 2. Refactor container css so the navbar can fit property and also have its stickyness persist
+  // TODO: 2a. Refactor margins so header and navbar are centered on screen
   return (
     <div className='App'>
       {/* <div className='loading-frame'><div className='container'></div></div> */}
-      <section id='home'>
-        <div className='container'>
-          <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
-          <div className='flex-item'>
-            <LandingHeader/>
-            <Navbar/>
-          </div>
-        </div>
+      <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
+      <section id='hero'>
+        <div className='title-container'><LandingHeader/></div>
       </section>
-      {/* <section id='about'>
-        <h1>About</h1>
-      </section> */}
+      <Navbar/>
+      <section id='about'>
+      </section>
       {/* <section id='experience'>
         <h1>Experience</h1>
       </section> */}
