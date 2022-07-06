@@ -7,6 +7,7 @@ import { ISourceOptions } from "tsparticles-engine";
 import Navbar from './components/Navbar/Navbar';
 import LandingHeader from './components/LandingHeader/LandingHeader';
 import './styles/App.scss';
+import AboutCard from './components/AboutCard/AboutCard';
 
 
 
@@ -39,8 +40,7 @@ const App = () => {
         <div className='title-container'><LandingHeader/></div>
       </section>
       <Navbar isFullNav={isFullNav}/>
-      <section id='about'>
-      </section>
+      <section id='about'><AboutCard/></section>
       {/* <section id='experience'>
         <h1>Experience</h1>
       </section> */}
