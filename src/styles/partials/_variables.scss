@@ -10,6 +10,8 @@ $primary-light: lighten($primary, 10%);
 $primary-lighter: lighten($primary, 20%);
 $primary-lightest: lighten($primary, 30%);
 
+$primary-gradient: $gracious-green-gradient;
+
 $secondary: $obsidian;
 $secondary-dark: darken($secondary, 3%);
 $secondary-darker: darken($secondary, 5%);
