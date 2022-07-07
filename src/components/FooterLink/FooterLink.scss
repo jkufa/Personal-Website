@@ -1,0 +1,19 @@
+.link-container {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: .5em;
+  padding: .5em .75em;
+  &:hover {
+    background-color: rgba(white, .25);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .at {
+    transform: translateY(2px);
+  }
+  span {
+    margin-inline-start: .5em;
+  }
+}

@@ -6,8 +6,10 @@ import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
 import Navbar from './components/Navbar/Navbar';
 import LandingHeader from './components/LandingHeader/LandingHeader';
+import FooterLink from './components/FooterLink/FooterLink';
 import './styles/App.scss';
 import AboutContent from './components/AboutCard/AboutContent';
+import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 
 
@@ -39,7 +41,11 @@ const App = () => {
           <section id='about'><AboutContent/></section>
         </div>
       </div>
-     
+     <footer>
+      <FooterLink text={'email'} icon={solid('at')} link='mailto:jack@kufa.io'></FooterLink>
+      <FooterLink text={'github'} icon={brands('github')} link='https://github.com/jkufa'></FooterLink>
+      <FooterLink text={'linkedin'} icon={brands('linkedin')} link='https://linkedin.com/in/jackkufa'></FooterLink>
+     </footer>
       {/* <section id='experience'>
         <h1>Experience</h1>
       </section> */}
