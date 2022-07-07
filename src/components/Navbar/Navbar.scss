@@ -7,22 +7,20 @@
   align-self: flex-start;
 }
 
+.nav-top {
+  border-radius: 0 0 1em 1em;
+}
+
 header {
-  transition: 0.15s ease-out;
+  transform: translateY(-1px);
   z-index: 99;
 }
 
 nav {
+  transition: .1s ease-out;
   @include lg {
-    font-size: 18px;
-    margin-inline-start: 20%;
+    margin: 0 8.75em;
   }
-  @include md {
-    font-size: 16px;
-    margin-inline-start: 16%;
-  }
-  margin-inline-start: 8%;
-  font-size: 14px;
   width: fit-content;
   border-radius: 1em;
   overflow: hidden;

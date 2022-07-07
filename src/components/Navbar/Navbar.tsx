@@ -4,13 +4,13 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import './Navbar.scss';
 
 type Props = {
-  isFullNav : boolean
+  isAtTop : boolean
 }
 
-export default function Navbar({isFullNav}: Props) {
+export default function Navbar({isAtTop}: Props) {
   return (
-    <header id='navbar' className={isFullNav ? 'full-nav navbar-main' : 'navbar-main'}>
-    <nav className={isFullNav ? '' : 'full-nav'}>
+    <header id='navbar' className='navbar-main'>
+    <nav className={isAtTop ? 'nav-top' : ''}>
       <ul>
         <li><button autoFocus><FontAwesomeIcon icon={solid('house')} /></button></li>
         <li><button>About</button></li>

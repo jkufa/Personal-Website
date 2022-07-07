@@ -4,7 +4,7 @@
 h1 {
   display: inline-block;
   @include lg {
-    font-size: 96px;
+    font-size: 86px;
     max-width: 960px;
   }
   @include md {

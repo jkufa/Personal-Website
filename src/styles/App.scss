@@ -2,23 +2,21 @@
 @import './partials/variables';
 @import './partials/globals';
 
-.App {
-  position: relative;
-  // overflow: hidden;
+#hero {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16vh;
 }
 
-.loading-frame {
-  position: absolute;
+#about {
   height: 100vh;
-  width: 100vw;
-  // overflow: clip;
-  z-index: -1;
-  .container {
-    height: 100vh;
-    background-color: $primary;
-    animation: fancy-transition 1.8s cubic-bezier(0.52, .21, 0, 1) .2s 1 forwards;
-  }
-  transform: skew(311deg, 353deg) scale(3.5);
+}
+
+.App {
+  position: relative;
 }
 
 .title-container {
@@ -26,17 +24,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 14% 8% 0;
-  @include lg {
-    margin: 14% 20% 0;
-}
-  @include md {
-    margin: 14% 16% 0;
-  }
   height: fit-content;
   width: fit-content;
+  margin: 0 8.75em;
 }
 
-#hero {
-  height: fit-content;
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  .card {
+    width: 1200px;
+    height: 800px;
+    border: 1px solid $obsidian;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 5px rgba(6, 1, 17, 0.3);
+    overflow: auto;
+  }
 }

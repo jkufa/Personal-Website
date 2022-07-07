@@ -16,31 +16,30 @@ const App = () => {
     await loadFull(engine);
   }, []);
   
-  const [isFullNav, setFullNav] = useState(false);
+  const [isAtTop, setFullNav] = useState(false);
 
 
+  const navStart = document.getElementById('navbar')?.offsetTop || 0;
   const checkNavPos = () => {
     var navPos = document.getElementById('navbar')?.offsetTop || 0;
-    var currentPos = window.scrollY;
-    currentPos >= navPos + 230 ? setFullNav(true) : setFullNav(false);
+    console.log(navStart, navPos) // TODO: change 609 to a dynamic value
+    navPos > navStart ? setFullNav(true) : setFullNav(false);
   }
   
-  useEffect(() => {
-    window.addEventListener('scroll', checkNavPos);
-  }, []);
-
-  // TODO: 1. Create a parent section, where all sub sections live.
-  // TODO: 2. Refactor container css so the navbar can fit property and also have its stickyness persist
-  // TODO: 2a. Refactor margins so header and navbar are centered on screen
   return (
-    <div className='App' onScroll={checkNavPos}>
+    <div className='App'>
       {/* <div className='loading-frame'><div className='container'></div></div> */}
       <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
-      <section id='hero'>
-        <div className='title-container'><LandingHeader/></div>
-      </section>
-      <Navbar isFullNav={isFullNav}/>
-      <section id='about'><AboutCard/></section>
+      <div className='card-container'>
+        <div id='card' className='card' onScroll={checkNavPos}>
+          <section id='hero'>
+            <div className='title-container'><LandingHeader/></div>
+          </section>
+          <Navbar isAtTop={isAtTop}/>
+          <section id='about'></section>
+        </div>
+      </div>
+     
       {/* <section id='experience'>
         <h1>Experience</h1>
       </section> */}
