@@ -1,12 +1,85 @@
 @import '../../styles/partials/variables';
 
 .card-container {
-  margin-top: 26vh;
   height: 100vh;
   border-radius: 60px;
   backdrop-filter: blur(60px);
   .card-background {
-    background: linear-gradient(25.31deg, rgba(0, 0, 0, 0.1) -65.01%, rgba(11, 7, 19, 0.1) 17.6%, rgba(30, 21, 40, 0.1) 78.73%, rgba(226, 213, 255, 0.125) 147.45%), rgba(255, 255, 255, 0.1);
+    background: linear-gradient(25.31deg, rgba(0, 0, 0, 0.2) -65.01%, rgba(11, 7, 19, 0.2) 17.6%, rgba(30, 21, 40, 0.2) 78.73%, rgba(226, 213, 255, 0.225) 147.45%), rgba(255, 255, 255, 0.2);
     opacity: .25;
+  }
+}
+
+.content-container {
+  height: 100vh;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .col {
+    padding: 1rem;
+    h2 {
+      margin: .4em 0;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+    }
+    &1 {
+      transform: translateY(-1.75rem);
+    }
+    &2 {
+      margin-left: 4rem;
+    }
+  }
+
+  .my-gorgeous-face {
+    img {
+      border-radius: 50%;
+      width: 18em;
+    }
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+
+    button {
+      opacity: .75;
+      border-radius: .6em;
+      font-weight: 700;
+      padding: .5em 1em;
+      span {
+        margin-inline-start: .75em;
+      }
+    }
+  }
+
+  .about-body, .previous-companies {
+    max-width: 400px;
+  }
+
+  .about-body {
+    height: fit-content;
+    p {
+      font-size: 26px;
+      font-weight: 400;
+    }
+  }
+  .previous-companies {
+    padding-top: 2rem;
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .company-logo {
+      width: fit-content;
+      width: fit-content;
+      img {
+        max-width: 80%;
+      }
+    }
   }
 }
