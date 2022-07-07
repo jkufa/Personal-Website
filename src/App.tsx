@@ -7,7 +7,7 @@ import { ISourceOptions } from "tsparticles-engine";
 import Navbar from './components/Navbar/Navbar';
 import LandingHeader from './components/LandingHeader/LandingHeader';
 import './styles/App.scss';
-import AboutCard from './components/AboutCard/AboutCard';
+import AboutContent from './components/AboutCard/AboutContent';
 
 
 
@@ -36,7 +36,7 @@ const App = () => {
             <div className='title-container'><LandingHeader/></div>
           </section>
           <Navbar isAtTop={isAtTop}/>
-          <section id='about'></section>
+          <section id='about'><AboutContent/></section>
         </div>
       </div>
      
