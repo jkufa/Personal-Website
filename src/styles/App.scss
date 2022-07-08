@@ -17,13 +17,10 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 15em;
+
   @include lg {
   margin-top: 8em;
   }
-}
-
-#about {
-  // height: 100vh;
 }
 
 .App {
@@ -48,18 +45,20 @@ footer {
   align-items: center;
   height: 100vh;
   width: 100vw;
+
   .card {
     width: 100%;
-    @include lg {
-      max-width: 1200px;
-      height: 800px;
-      margin-bottom:  0;
-    }
     height: 100%;
     margin-bottom:  4rem;
     border: 1px solid $obsidian;
-    border-radius: 20px;
-    box-shadow: 0px 10px 30px 5px rgba(6, 1, 17, 0.3);
+    border-radius: $card-border-radius;
+    box-shadow: $card-shadow;
     overflow: auto;
+
+    @include lg {
+      max-width: $card-width-lg;
+      height: $card-height-lg;
+      margin-bottom:  0;
+    }
   }
 }
