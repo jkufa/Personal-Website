@@ -1,5 +1,10 @@
+@import '../../styles/partials/_variables.scss';
+
 .link-container {
-  font-size: 14px;
+  font-size: 10px;
+  @include lg {
+    font-size: 14px;
+  }
   font-weight: 700;
   border-radius: .5em;
   padding: .5em .75em;
