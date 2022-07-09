@@ -7,9 +7,10 @@ import { ISourceOptions } from "tsparticles-engine";
 import Navbar from './components/Navbar/Navbar';
 import LandingHeader from './components/LandingHeader/LandingHeader';
 import FooterLink from './components/FooterLink/FooterLink';
-import './styles/App.scss';
 import AboutContent from './components/AboutCard/AboutContent';
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import './styles/App.scss';
+// import './styles/test.css';
 
 
 
@@ -30,7 +31,6 @@ const App = () => {
   
   return (
     <div className='App'>
-      {/* <div className='loading-frame'><div className='container'></div></div> */}
       <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
       <div className='card-container'>
         <div id='card' className='card' onScroll={checkNavPos}>
@@ -46,9 +46,13 @@ const App = () => {
       <FooterLink text={'github'} icon={brands('github')} link='https://github.com/jkufa'></FooterLink>
       <FooterLink text={'linkedin'} icon={brands('linkedin')} link='https://linkedin.com/in/jackkufa'></FooterLink>
      </footer>
-      {/* <section id='experience'>
-        <h1>Experience</h1>
-      </section> */}
+
+     {/* <div className='card-container'>
+      <div className='card'>card</div>
+     </div> 
+     <div className='footer'>
+      footer
+     </div> */}
   </div>
   );
 }
