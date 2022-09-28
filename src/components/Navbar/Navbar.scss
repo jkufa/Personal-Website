@@ -5,7 +5,7 @@ header {
   z-index: 99;
 }
 
-nav, button {
+nav, a {
   font-size: 14px;
 
   @include lg {
@@ -36,11 +36,9 @@ nav {
     list-style: none;
     padding: 0;
     height: 100%;
-    margin: 0;
 
     li {
-
-      button {
+      a.nav-item {
         width: 100%;
         height: 100%;
         min-width: 4em;
@@ -49,34 +47,44 @@ nav {
         background: transparent;
         position: relative;
         z-index: 1;
-
+        font-family: inherit;
+        border: none;
+        text-align: center;
+        border-radius: 1em;
+        padding: 1em 1.75em;
+        &:link {
+            text-decoration: none;
+        }
         &:hover {
           cursor: pointer;
           background: $secondary-dark;
           box-shadow: 0 0 .75em $secondary-darker inset;
           transition: .3s ease-out .1s;
         }
-
-        &:focus-visible {
-          outline: 1px solid white;
-          outline-offset: -1px;
-        }
-
-        &:focus::before {
-          opacity: 1;
-          box-shadow: 0 0 1em $secondary-darker;
-        }
-
-        &::before {
-          border-radius: 1em;
-          position: absolute;
-          content: '';
-          inset: 0;
+        &.active {
           background: $primary-gradient;
-          z-index: -1;
-          transition: opacity 0.2s ease-in .1s;
-          opacity: 0;
         }
+
+        // &:focus-visible {
+        //   outline: 1px solid white;
+        //   outline-offset: -1px;
+        // }
+
+        // &:focus::before {
+        //   opacity: 1;
+        //   box-shadow: 0 0 1em $secondary-darker;
+        // }
+
+        // &::before {
+        //   border-radius: 1em;
+        //   position: absolute;
+        //   content: '';
+        //   inset: 0;
+        //   background: $primary-gradient;
+        //   z-index: -1;
+        //   transition: opacity 0.2s ease-in .1s;
+        //   opacity: 0;
+        // }
       }
     }
   }

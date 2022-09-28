@@ -24,6 +24,7 @@ $secondary-lightest: lighten($secondary, 30%);
 $background: $black-obsidian;
 $navbar: $obsidian;
 $card-background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(25.31deg, rgba(30, 21, 40, 0.375) -65.01%, rgba(11, 7, 19, 0.45) 41.57%, rgba(0, 0, 0, 0.5) 148.14%), rgba(255, 255, 255, 0.2);
+$about-card-background: linear-gradient(0deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09)), linear-gradient(25.31deg, rgba(30, 21, 40, 0.1125) -65.01%, rgba(11, 7, 19, 0.135) 41.57%, rgba(0, 0, 0, 0.15) 148.14%), rgba(255, 255, 255, 0.06);
 
 
 //** SHADOWS **//

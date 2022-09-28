@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import './partials/variables';
 @import './partials/globals';
 
@@ -16,10 +16,10 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 15em;
+  padding-top: 15em;
 
   @include lg {
-  margin-top: 8em;
+  padding-top: 8em;
   }
 }
 
@@ -28,7 +28,6 @@ footer {
   height: 100vh;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 .card-container {
   display: flex;

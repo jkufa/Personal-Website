@@ -6,6 +6,9 @@
   animation: fade-in 1.25s ease-in .25s forwards;
   position: relative;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 18px;
@@ -14,7 +17,6 @@ body {
   margin: 0;
   background-color: $background;
   color: white;
-  scroll-behavior: smooth;
 }
 
 button {
