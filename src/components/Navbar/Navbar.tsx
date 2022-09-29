@@ -1,8 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { regular, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import './Navbar.scss';
-import { FontawesomeObject } from '@fortawesome/fontawesome-svg-core';
 
 type Props = {
   isAtTop : boolean
@@ -10,25 +9,27 @@ type Props = {
 
 interface NavItem {
   href: string;
-  content: string | ReactElement;
+  text?: string
+  icon?: ReactElement;
 }
 
 const navItems: Array<NavItem> = [
   {
     href: '#hero',
-    content: <FontAwesomeIcon icon={solid('house')} />
+    icon: <FontAwesomeIcon icon={solid('house')} />
   },
   {
     href: '#about',
-    content: 'About'
+    text: 'About'
   },
-  {
-    href: '#work',
-    content: 'Work'
-  },
+  // {
+  //   href: '#work',
+  //   text: 'Work'
+  // },
   {
     href: 'https://github.com/jkufa/Resume/blob/master/JackKufaResume.pdf',
-    content: 'Resume'
+    text: 'Resume',
+    icon: <span className='external-link'><FontAwesomeIcon icon={solid('arrow-up-right-from-square')} /></span>
   }
 ]
 
@@ -44,7 +45,7 @@ const Navbar = (props: Props) => {
     <nav className={props.isAtTop ? 'nav-top' : ''}>
       <ul>
         { navItems.map((item, key) => {
-          return <li><a key={key} href={item.href} onClick={() => handleActiveItem(key)} className={activeItem === key ? "active nav-item" : 'nav-item'}>{item.content}</a></li>;
+          return <li><a key={key} href={item.href} onClick={() => handleActiveItem(key)} className={activeItem === key ? "active nav-item" : 'nav-item'}>{item.text} {item.icon}</a></li>;
         }) }
       </ul>
     </nav>

@@ -21,7 +21,7 @@ export default function LandingHeader({}: Props) {
   
   return (
     <h1 id='title'>
-      Jack Kufa is all about <span className='fade-in-out' onAnimationIteration={iterate}>{word}.</span>
+      Jack Kufa is all about <br/><span className='fade-in-out' onAnimationIteration={iterate}>{word}.</span>
     </h1>
   )
 }

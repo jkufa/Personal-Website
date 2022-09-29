@@ -1,21 +1,18 @@
 @import '../../styles/partials/_variables.scss';
 
 .link-container {
-  font-size: 12px;
   font-weight: 700;
   border-radius: .5em;
-  padding: .5em .75em;
+  padding: .25em .75em;
   margin: .25em;
-
-  @include lg {
-    font-size: 14px;
-  }
 
   &:hover {
     background-color: rgba(white, .25);
   }
 
   a {
+    opacity: .8;
+    font-size: 14px;
     text-decoration: none;
     color: white;
   }

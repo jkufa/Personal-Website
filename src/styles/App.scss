@@ -3,42 +3,42 @@
 @import './partials/globals';
 
 footer {
-  position: absolute;
+  position: fixed;
   inset: auto 0 0 0;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  background-color: rgba($black-obsidian, .9);
 }
 
-#hero {
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 15em;
-
-  @include lg {
-  padding-top: 8em;
+.content-main {
+  width: 95%;
+  #hero {
+    margin-left: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15em;
+  
+    @include lg {
+    padding-top: 20em;
+    }
+  }
+  
+  #about {
+    display: flex;
+    margin-top: 30em;
+    height: 100vh;
+    align-items: center;
   }
 }
 
 .App { // TODO: We dont want app to be scrollable (ios)
   position: relative;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-grow: 2;
-  align-self: center;
-
   .card {
-    width: 100vw;
     height: 100%;
-    // margin-bottom:  4rem;
     border: 1px solid $obsidian;
     border-radius: $card-border-radius;
     box-shadow: $card-shadow;
@@ -53,11 +53,7 @@ footer {
     .title-container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       height: fit-content;
       width: fit-content;
-      margin: 0 8.75em;
     }
   }
-}

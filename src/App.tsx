@@ -20,8 +20,8 @@ const App = () => {
   }, []);
   
   const [isAtTop, setFullNav] = useState(false);
-
-
+  
+  
   const navStart = document.getElementById('navbar')?.offsetTop || 0;
   const checkNavPos = () => {
     var navPos = document.getElementById('navbar')?.offsetTop || 0;
@@ -29,17 +29,22 @@ const App = () => {
     navPos > navStart ? setFullNav(true) : setFullNav(false);
   }
   
+    window.addEventListener('scroll', () => {
+      checkNavPos();
+    })
+  
   return (
     <div className='App'>
       <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
-      <div className='card-container'>
-        <div id='card' className='card' onScroll={checkNavPos}>
+        <div className='content-main'>
           <section id='hero'>
             <div className='title-container'><LandingHeader/></div>
           </section>
           <Navbar isAtTop={isAtTop}/>
-          <section id='about'><AboutContent/></section>
-        </div>
+          <div className='beeg-card'>
+            <section id='about'><AboutContent/></section>
+            {/* <section style={{ height: '100vh' }} id='work'></section> */}
+          </div>
       </div>
      <footer>
       <FooterLink text={'email'} icon={solid('at')} link='mailto:jack@kufa.io'></FooterLink>
