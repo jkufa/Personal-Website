@@ -13,15 +13,21 @@ footer {
 .content-main {
   width: 95%;
   #hero {
-    margin-left: auto;
-    width: 75%;
+
     display: flex;
     flex-direction: column;
     padding-top: 15em;
   
     @include lg {
     padding-top: 20em;
+    margin-left: auto;
+    width: 75%;
     }
+    @include md {
+      padding-top: 20em;
+      margin-left: auto;
+      width: 75%;
+      }
   }
   
   #about {
@@ -37,23 +43,14 @@ footer {
   display: flex;
   justify-content: center;
 }
-  .card {
-    height: 100%;
-    border: 1px solid $obsidian;
-    border-radius: $card-border-radius;
-    box-shadow: $card-shadow;
-    overflow: auto;
 
-    @include lg {
-      max-width: $card-width-lg;
-      height: $card-height-lg;
-      // margin-bottom:  0;
-    }
-
-    .title-container {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      width: fit-content;
-    }
+.title-container {
+  margin: auto;
+  width: 80%;
+  @include md {
+    margin: 0;
   }
+  @include lg {
+    margin: 0;
+  }
+}

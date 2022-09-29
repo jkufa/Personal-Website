@@ -25,7 +25,7 @@ const App = () => {
   const navStart = document.getElementById('navbar')?.offsetTop || 0;
   const checkNavPos = () => {
     var navPos = document.getElementById('navbar')?.offsetTop || 0;
-    console.log(navStart, navPos) // TODO: change 609 to a dynamic value
+    // console.log(navStart, navPos) // TODO: change 609 to a dynamic value
     navPos > navStart ? setFullNav(true) : setFullNav(false);
   }
   

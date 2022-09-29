@@ -5,6 +5,7 @@
   border-radius: .5em;
   padding: .25em .75em;
   margin: .25em;
+  align-content: center;
 
   &:hover {
     background-color: rgba(white, .25);
@@ -12,9 +13,15 @@
 
   a {
     opacity: .8;
-    font-size: 14px;
+    font-size: 11px;
     text-decoration: none;
     color: white;
+    @include lg {
+      font-size: 14px;
+    }
+    @include md {
+      font-size: 14px;
+    }
   }
 
   .at {

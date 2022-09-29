@@ -3,8 +3,13 @@
 header {
   transform: translateY(-1px);
   z-index: 99;
-  width: 75%;
-  margin-left: auto;
+  @include lg {
+    width: 75%;
+    margin-left: auto;
+  }  @include md {
+    width: 75%;
+    margin-left: auto;
+  }
 }
 
 nav, a {
@@ -20,15 +25,21 @@ nav, a {
 }
 
 nav {
+  margin: auto;
+  @include md {
+    margin: 0;
+  }  @include lg {
+    margin: 0;
+  }
   width: fit-content;
   border-radius: 1em;
   overflow: hidden;
   background-color: $navbar;
   box-shadow: $nav-shadow;
   transition: .1s ease-out;
-
-  @include lg {
-  }
+  align-self: center;
+  align-items: center;
+  align-content: center;
 
   ul {
     display: flex;

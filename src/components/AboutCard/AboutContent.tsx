@@ -17,11 +17,9 @@ export default function AboutContent({}: Props) {
             <img className='my-ugly-mug' src='https://avatars.githubusercontent.com/u/32912221?v=4' alt='A picture of me!'/>
             <h1>Jack Kufa</h1>
             <div className='subcontent'>
-              <div><FontAwesomeIcon className='fa-icon' icon={solid('graduation-cap')} />Missouri University of Science and Technology</div>
-              <div>
+                <span><FontAwesomeIcon className='fa-icon' icon={solid('graduation-cap')} />Missouri University of Science and Technology</span>
                 <span><FontAwesomeIcon className='fa-icon' icon={solid('building')} />Associate Software Engineer</span>
                 <span><FontAwesomeIcon className='fa-icon' icon={solid('briefcase')} />Service Management Group</span>
-              </div>
               {/* <div><span><FontAwesomeIcon className='fa-icon' icon={solid('briefcase')} />Associate Software Engineer</span></div> */}
             </div>
           </div>
