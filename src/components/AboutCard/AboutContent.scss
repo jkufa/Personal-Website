@@ -59,9 +59,9 @@
   }
 
   h1 {
-    margin: 2rem 0 .5rem;
-    text-align: center;
+    margin: .3em 0 .125em;
     font-size: 2.5rem;
+    text-align: center;
     @include lg {
       font-size: 3.375rem;
     }
@@ -121,7 +121,8 @@
   }
   
   .my-ugly-mug {
-    margin: 0 8em;
+      width: 65%;
+      margin: auto;
     @include md {
       margin: auto;
       width: 18rem;
