@@ -2,26 +2,23 @@
 @import '../../styles/partials/variables';
 
 h1 {
+  font-size: 48px;
+  font-weight: 700;
   display: inline-block;
+
   @include lg {
-    font-size: 96px;
-    max-width: 960px;
+    font-size: 86px;
   }
+
   @include md {
     font-size: 64px;
-    max-width: 760px;
   }
-  min-width: 260px;
-  max-width: 680px;
-  font-size: 48px;
-  font-weight: 900;
+
   span {
     display: inline-block;
+
     &.fade-in-out {
       animation: fade-in-out 5s cubic-bezier(0.23, 1, 0.32, 1) infinite;
-    }
-    &.fade-out {
-      animation: fade-out-down 2s cubic-bezier(0.23, 1, 0.32, 1) 1, fade-in-up 2s cubic-bezier(0.23, 1, 0.32, 1) 1.75s 1;
     }
   }
 }

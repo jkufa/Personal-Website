@@ -6,13 +6,13 @@ var i = 0;
 
 export default function LandingHeader({}: Props) {
   const words = [
-    'front-end',
     'UI/UX',
     'design',
     'coffee',
+    'music',
     'mustache',
   ];
-  const [word, SetWord] = useState('development');
+  const [word, SetWord] = useState('front-end');
   
   const iterate = () => {
     SetWord(words[i]);
@@ -21,7 +21,7 @@ export default function LandingHeader({}: Props) {
   
   return (
     <h1 id='title'>
-      Jack Kufa is all about <span className='fade-in-out' onAnimationIteration={iterate}>{word}.</span>
+      Jack Kufa is all about <br/><span className='fade-in-out' onAnimationIteration={iterate}>{word}.</span>
     </h1>
   )
 }
@@ -34,4 +34,4 @@ export default function LandingHeader({}: Props) {
 // accessibility
 // music
 // learning guitar
-// mustache
+// mustache 

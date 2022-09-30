@@ -6,6 +6,9 @@
   animation: fade-in 1.25s ease-in .25s forwards;
   position: relative;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 18px;
@@ -14,12 +17,6 @@ body {
   margin: 0;
   background-color: $background;
   color: white;
-  scroll-behavior: smooth;
-}
-
-section {
-  height: 100vh;
-  width: 100vw;
 }
 
 button {
@@ -27,10 +24,5 @@ button {
   border: none;
   border-radius: 1em;
   text-align: center;
-  padding: 1em 2em;
-}
-
-.full-nav {
-  box-shadow: 0 .3em 1em rgba($primary-darkest,.4);
-  background-color: $navbar;
+  padding: 1em 1.75em;
 }

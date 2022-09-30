@@ -1,0 +1,34 @@
+@import '../../styles/partials/_variables.scss';
+
+.link-container {
+  font-weight: 700;
+  border-radius: .5em;
+  padding: .25em .75em;
+  margin: .25em;
+  align-content: center;
+
+  &:hover {
+    background-color: rgba(white, .25);
+  }
+
+  a {
+    opacity: .8;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    @include lg {
+      font-size: 14px;
+    }
+    @include md {
+      font-size: 14px;
+    }
+  }
+
+  .at {
+    transform: translateY(2px);
+  }
+
+  span {
+    margin-inline-start: .5em;
+  }
+}
