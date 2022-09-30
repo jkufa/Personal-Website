@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.d939ebfa.css",
-    "main.js": "/Personal-Website/static/js/main.63aae444.js",
-    "static/js/787.bbe01249.chunk.js": "/Personal-Website/static/js/787.bbe01249.chunk.js",
-    "static/media/CinemaCraft.png": "/Personal-Website/static/media/CinemaCraft.5d9cc08e73fbd7f47d60.png",
-    "static/media/SMG.svg": "/Personal-Website/static/media/SMG.c91fc5116e4dbd158b48cf5671c944c3.svg",
-    "static/media/Yaskawa.svg": "/Personal-Website/static/media/Yaskawa.f90d0a773b389c1320534adc1dad5cf3.svg",
-    "index.html": "/Personal-Website/index.html",
-    "main.d939ebfa.css.map": "/Personal-Website/static/css/main.d939ebfa.css.map",
-    "main.63aae444.js.map": "/Personal-Website/static/js/main.63aae444.js.map",
-    "787.bbe01249.chunk.js.map": "/Personal-Website/static/js/787.bbe01249.chunk.js.map"
+    "main.css": "/static/css/main.d939ebfa.css",
+    "main.js": "/static/js/main.d30eb891.js",
+    "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
+    "static/media/CinemaCraft.png": "/static/media/CinemaCraft.5d9cc08e73fbd7f47d60.png",
+    "static/media/SMG.svg": "/static/media/SMG.c91fc5116e4dbd158b48cf5671c944c3.svg",
+    "static/media/Yaskawa.svg": "/static/media/Yaskawa.f90d0a773b389c1320534adc1dad5cf3.svg",
+    "index.html": "/index.html",
+    "main.d939ebfa.css.map": "/static/css/main.d939ebfa.css.map",
+    "main.d30eb891.js.map": "/static/js/main.d30eb891.js.map",
+    "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d939ebfa.css",
-    "static/js/main.63aae444.js"
+    "static/js/main.d30eb891.js"
   ]
 }
