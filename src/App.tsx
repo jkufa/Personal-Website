@@ -20,8 +20,6 @@ const App = () => {
   }, []);
   
   const [isAtTop, setFullNav] = useState(false);
-  
-  
   const navStart = document.getElementById('navbar')?.offsetTop || 0;
   const checkNavPos = () => {
     var navPos = document.getElementById('navbar')?.offsetTop || 0;
