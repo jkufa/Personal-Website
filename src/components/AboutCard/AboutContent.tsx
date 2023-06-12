@@ -14,26 +14,26 @@ export default function AboutContent({}: Props) {
       <div className='background'>
         <div className='about-content'>
           <div className='col1'>
+            <div className="mug-wrapper">
+              <img className='my-ugly-mug' src='https://avatars.githubusercontent.com/u/32912221?v=4' alt="Headshot of Jack Kufa"/>
+            </div>
             <span className='name'>Jack Kufa</span>
             <div className='subcontent'>
-                <div className='info-item'>
-                  <FontAwesomeIcon className='fa-icon' icon={solid('graduation-cap')} />
-                  <div className="stacked-text">
-                    <span className='school'>Missouri S&T</span>
-                    <span className='degrees'>B.S. Computer Science</span>
-                    <span className='degrees'>B.S. Computer Engineering</span>
-                  </div>
+              <div className='info-item'>
+                <FontAwesomeIcon className='fa-icon' icon={solid('graduation-cap')} />
+                <div className="stacked-text">
+                  <span className='school'>Missouri S&T</span>
+                  <span className='degrees'>B.S. Computer Science</span>
+                  <span className='degrees'>B.S. Computer Engineering</span>
                 </div>
-                <div className='info-item'>
+              </div>
+              <div className='info-item job'>
                 <FontAwesomeIcon className='fa-icon' icon={solid('building')} />
                 <div className="stacked-text">
                   <span className='company'>Service Management Group</span>
                   <span className='job-title'>Software Engineer</span>
                 </div>
               </div>
-            </div>
-            <div className="mug-wrapper">
-              <img className='my-ugly-mug' src='https://avatars.githubusercontent.com/u/32912221?v=4' alt='A picture of me!'/>
             </div>
           </div>
           <div className='col2'>

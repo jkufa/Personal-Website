@@ -34,7 +34,6 @@
   gap: 5em;
 
   .main-content {
-    width: 60%;
     margin-bottom: auto;
     @include lg {
       width: auto;
@@ -70,24 +69,18 @@
   }
 
  .name {
-    font-size: 24px;
-    margin-bottom: 1.5rem;
+    font-size: 30px;
     padding-bottom: 4px;
     border-bottom: 1px solid rgba(white, .35);
   }
 
   h4 {
     font-size: 1.25rem;
-    width: 60%;
     font-weight: 300;
-    margin: 0 auto 0;
-    @include lg {
-    width: auto;
-    font-size: 1.5rem;
-    }
-    @include md {
-      width: auto;
+    margin: 0;
+    @include md; @include lg {
       font-size: 1.5rem;
+      margin: auto 0 .5em;
     }
 
   }
@@ -110,25 +103,24 @@
   .col1 {
     display: flex;
     flex-direction: column;
-    // max-width: 240px;
+    gap: 1.5rem;
   }
   .col2 {
     display: flex;
     flex-direction: column;
-    max-width: 30rem;
+    max-width: 22rem;
+    @include md; @include lg {
+      max-width: 30rem;
+    }
   }
   
   .mug-wrapper {
-    margin-top: 4rem;
+    max-width: 13rem;
+    @include md; @include lg {
+      max-width: 15rem;
+    }
     .my-ugly-mug {
-      margin-top: 2rem;
-      width: 16rem;
-      @include md {
-        width: 80%;
-      }
-      @include lg {
-        width: 80%;
-      }
+      width: 100%;
       margin: 0;
       border-radius: 50%;
       box-shadow: 0px 8px 24px -4px rgba(6, 1, 17, 0.50);
@@ -188,6 +180,9 @@
 .info-item {
   display: flex;
   gap: .75rem;
+  svg {
+    width: 22.5px
+  }
 }
 
 .stacked-text {
@@ -197,12 +192,20 @@
 }
 
 .school, .company {
-  max-width: 200px;
+  // max-width: 200px;
   font-size: 16px;
 }
 
 .degrees, .job-title {
   opacity: .75;
   font-style: italic;
+  font-size: 14px;
   line-height: 12px;
 }
+
+.job {
+  svg {
+    margin-top: 3px;
+  }
+}
+
