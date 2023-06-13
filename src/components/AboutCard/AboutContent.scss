@@ -134,11 +134,11 @@
       overflow: hidden;
       user-select: none;
       gap: 2em;
+      margin-top: 1em;
       .logos {
         align-items: center;
         justify-content: space-around;
         display: flex;
-        margin-top: 1em;
         gap: 2em;
         animation: scroll-left 15s linear infinite;
         width: fit-content;
