@@ -13,17 +13,30 @@ export default function AboutContent({}: Props) {
     <div className='background-container'>
       <div className='background'>
         <div className='about-content'>
-          <div className='col'>
-            <img className='my-ugly-mug' src='https://avatars.githubusercontent.com/u/32912221?v=4' alt='A picture of me!'/>
-            <h1>Jack Kufa</h1>
+          <div className='col1'>
+            <div className="mug-wrapper">
+              <img className='my-ugly-mug' src='https://avatars.githubusercontent.com/u/32912221?v=4' alt="Headshot of Jack Kufa"/>
+            </div>
+            <span className='name'>Jack Kufa</span>
             <div className='subcontent'>
-                <span><FontAwesomeIcon className='fa-icon' icon={solid('graduation-cap')} />Missouri University of Science and Technology</span>
-                <span><FontAwesomeIcon className='fa-icon' icon={solid('building')} />Associate Software Engineer</span>
-                <span><FontAwesomeIcon className='fa-icon' icon={solid('briefcase')} />Service Management Group</span>
-              {/* <div><span><FontAwesomeIcon className='fa-icon' icon={solid('briefcase')} />Associate Software Engineer</span></div> */}
+              <div className='info-item'>
+                <FontAwesomeIcon className='fa-icon' icon={solid('graduation-cap')} />
+                <div className="stacked-text">
+                  <span className='school'>Missouri S&T</span>
+                  <span className='degrees'>B.S. Computer Science</span>
+                  <span className='degrees'>B.S. Computer Engineering</span>
+                </div>
+              </div>
+              <div className='info-item job'>
+                <FontAwesomeIcon className='fa-icon' icon={solid('building')} />
+                <div className="stacked-text">
+                  <span className='company'>Service Management Group</span>
+                  <span className='job-title'>Software Engineer</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='col'>
+          <div className='col2'>
             <div className='main-content'>
               <p>I’m a software engineer currently living in the greater Philadelphia area who’s obsessed with creating cohesive experiences for end-users.</p>
               <p>I’m also a major coffee geek, aspiring guitarist, and mechanical keyboard enthusiast.</p>

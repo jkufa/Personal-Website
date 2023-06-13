@@ -7,7 +7,10 @@ footer {
   inset: auto 0 0 0;
   display: flex;
   justify-content: center;
-  background-color: rgba($black-obsidian, .9);
+  background-color: rgba($black-obsidian, .2);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .content-main {
@@ -16,7 +19,7 @@ footer {
 
     display: flex;
     flex-direction: column;
-    padding-top: 15em;
+    padding-top: 13em;
   
     @include lg {
     padding-top: 20em;
@@ -53,4 +56,8 @@ footer {
   @include lg {
     margin: 0;
   }
+}
+
+.beeg-card {
+  margin-bottom: 6vh;
 }

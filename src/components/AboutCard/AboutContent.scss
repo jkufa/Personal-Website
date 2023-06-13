@@ -30,13 +30,11 @@
   @include md {
     flex-direction: row;
   }
-  align-items: center;
   justify-content: center;
   gap: 5em;
 
   .main-content {
-    width: 60%;
-    margin: auto;
+    margin-bottom: auto;
     @include lg {
       width: auto;
     }
@@ -46,6 +44,9 @@
   }
 
   p {
+    &:first-of-type {
+      margin-top: 0;
+    }
     font-size: 1rem;
     @include lg {
       font-size: 1.25rem;
@@ -67,67 +68,63 @@
     }
   }
 
+ .name {
+    font-size: 30px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(white, .35);
+  }
+
   h4 {
     font-size: 1.25rem;
-    width: 60%;
     font-weight: 300;
-    margin: 0 auto 0;
-    @include lg {
-    width: auto;
-    font-size: 1.5rem;
-    }
-    @include md {
-      width: auto;
+    margin: 0;
+    @include md; @include lg {
       font-size: 1.5rem;
+      margin: auto 0 .5em;
     }
 
   }
   .subcontent {
-    font-size: 13px;
-    opacity: .75;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 1.5rem;
     @include md {
-      flex-direction: row;
       font-size: 14px;
     } @include lg {
-      flex-direction: row;
       font-size: 14px;
     }
-      span {
-        width: fit-content;
-        align-content: center;
-        margin-inline-start: 1rem;
-        text-align: center;
-        align-items: center;
-        margin: .25em auto;
-      }
   }
 
   .fa-icon {
-    padding-inline-end: .5em;
+    opacity: .6;
   }
 
-  .col {
+  .col1 {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    max-width: 30rem;
+    gap: 1.5rem;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 22rem;
+    @include md; @include lg {
+      max-width: 30rem;
+    }
   }
   
-  .my-ugly-mug {
-    margin: 0 8em;
-    @include md {
-      margin: auto;
-      width: 18rem;
+  .mug-wrapper {
+    max-width: 13rem;
+    @include md; @include lg {
+      max-width: 15rem;
     }
-    @include lg {
-      margin: auto;
-      width: 18rem;
+    .my-ugly-mug {
+      width: 100%;
+      margin: 0;
+      border-radius: 50%;
+      box-shadow: 0px 8px 24px -4px rgba(6, 1, 17, 0.50);
     }
-    border-radius: 50%;
-    box-shadow: 0px 8px 24px -4px rgba(6, 1, 17, 0.50);
   }
 
   .companies {
@@ -141,7 +138,7 @@
         align-items: center;
         justify-content: space-around;
         display: flex;
-        margin-top: 2em;
+        margin-top: 1em;
         gap: 2em;
         animation: scroll-left 15s linear infinite;
         width: fit-content;
@@ -179,3 +176,36 @@
     }
   }
 }
+
+.info-item {
+  display: flex;
+  gap: .75rem;
+  svg {
+    width: 22.5px
+  }
+}
+
+.stacked-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.school, .company {
+  // max-width: 200px;
+  font-size: 16px;
+}
+
+.degrees, .job-title {
+  opacity: .75;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.job {
+  svg {
+    margin-top: 3px;
+  }
+}
+
