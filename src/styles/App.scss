@@ -14,9 +14,12 @@ footer {
 }
 
 .content-main {
-  width: 95%;
+  width: calc(100% - 2px);
+  @include md; @include lg {
+    width: 98%;
+  }
+  margin: 0 auto;
   #hero {
-
     display: flex;
     flex-direction: column;
     padding-top: 13em;
