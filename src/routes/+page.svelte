@@ -25,7 +25,9 @@
 	});
 </script>
 
-<Landing></Landing>
+<div class="ms-8">
+	<Landing></Landing>
+</div>
 <div class="h-screen"></div>
 
 <style lang="postcss">
