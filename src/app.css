@@ -4,7 +4,7 @@
 
 @layer components {
 	.text-10xl {
-		font-size: 10rem;
-		line-height: 0.9;
+		font-size: 14rem;
+		line-height: 0.85;
 	}
 }

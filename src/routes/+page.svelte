@@ -1,5 +1,7 @@
 <script lang="ts">
-	import Landing from '$lib/components/landing.svelte';
+	import About from '$lib/components/about.svelte';
+	import Cursor from '$lib/components/cursor.svelte';
+import Landing from '$lib/components/landing.svelte';
 	import Lenis from '@studio-freight/lenis';
 	import { onMount } from 'svelte';
 
@@ -25,13 +27,7 @@
 	});
 </script>
 
-<div class="ms-8">
-	<Landing></Landing>
-</div>
+<Cursor/>
+<Landing/>
+<About/>
 <div class="h-screen"></div>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>
